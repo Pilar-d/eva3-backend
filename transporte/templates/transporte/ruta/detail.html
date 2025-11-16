@@ -1,0 +1,160 @@
+{% extends 'transporte/base.html' %}
+
+{% block title %}Detalle Ruta - LogiTrack{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h4 class="mb-0">
+                    <i class="fas fa-route me-2"></i>Detalle de la Ruta
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2">Información Básica</h5>
+                        <p><strong>Código:</strong> {{ ruta.codigo }}</p>
+                        <p><strong>Nombre:</strong> {{ ruta.nombre }}</p>
+                        <p><strong>Tipo de Transporte:</strong> 
+                            <span class="badge {% if ruta.tipo_transporte == 'TERRESTRE' %}bg-warning text-dark{% else %}bg-info{% endif %}">
+                                <i class="fas {% if ruta.tipo_transporte == 'TERRESTRE' %}fa-truck{% else %}fa-plane{% endif %} me-1"></i>
+                                {{ ruta.get_tipo_transporte_display }}
+                            </span>
+                        </p>
+                        <p><strong>Estado:</strong> 
+                            <span class="badge {% if ruta.activo %}bg-success{% else %}bg-danger{% endif %}">
+                                {{ ruta.activo|yesno:"Activa,Inactiva" }}
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2">Origen y Destino</h5>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-primary me-2">{{ ruta.origen }}</span>
+                            <i class="fas fa-arrow-right text-muted mx-3"></i>
+                            <span class="badge bg-success">{{ ruta.destino }}</span>
+                        </div>
+                        <p><strong>Distancia:</strong> 
+                            {% if ruta.distancia_km %}
+                            <span class="badge bg-secondary">{{ ruta.distancia_km }} km</span>
+                            {% else %}
+                            <span class="text-muted">No especificada</span>
+                            {% endif %}
+                        </p>
+                        <p><strong>Tiempo Estimado:</strong> 
+                            {% if ruta.tiempo_estimado_horas %}
+                            <span class="badge bg-info">{{ ruta.tiempo_estimado_horas }} horas</span>
+                            {% else %}
+                            <span class="text-muted">No especificado</span>
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2">Costos Estimados</h5>
+                        <p><strong>Combustible:</strong> 
+                            {% if ruta.costo_combustible_estimado %}
+                            ${{ ruta.costo_combustible_estimado }}
+                            {% else %}
+                            <span class="text-muted">No especificado</span>
+                            {% endif %}
+                        </p>
+                        <p><strong>Peajes:</strong> 
+                            {% if ruta.peajes_estimados %}
+                            ${{ ruta.peajes_estimados }}
+                            {% else %}
+                            <span class="text-muted">No especificado</span>
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+
+                {% if ruta.descripcion %}
+                <div class="mt-3">
+                    <h5 class="border-bottom pb-2">Descripción</h5>
+                    <p class="mb-0">{{ ruta.descripcion }}</p>
+                </div>
+                {% endif %}
+
+                <div class="mt-4">
+                    <h5 class="border-bottom pb-2">Despachos en esta Ruta</h5>
+                    {% if ruta.despachos.all %}
+                        <div class="list-group">
+                            {% for despacho in ruta.despachos.all|slice:":5" %}
+                            <a href="{% url 'transporte:despacho_detail' despacho.id %}" class="list-group-item list-group-item-action">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>{{ despacho.referencia }}</strong>
+                                        <small class="text-muted d-block">{{ despacho.cliente.nombre }}</small>
+                                    </div>
+                                    <span class="badge 
+                                        {% if despacho.estado == 'PENDIENTE' %}bg-warning text-dark
+                                        {% elif despacho.estado == 'EN_RUTA' %}bg-info
+                                        {% elif despacho.estado == 'ENTREGADO' %}bg-success
+                                        {% else %}bg-danger{% endif %}">
+                                        {{ despacho.get_estado_display }}
+                                    </span>
+                                </div>
+                            </a>
+                            {% endfor %}
+                        </div>
+                        {% if ruta.despachos.all.count > 5 %}
+                        <p class="text-muted mt-2">... y {{ ruta.despachos.all.count|add:"-5" }} más</p>
+                        {% endif %}
+                    {% else %}
+                        <p class="text-muted">No hay despachos registrados para esta ruta.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header bg-secondary text-white">
+                <h6 class="mb-0">Acciones</h6>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="{% url 'transporte:ruta_update' ruta.id %}" class="btn btn-warning">
+                        <i class="fas fa-edit me-1"></i> Editar Ruta
+                    </a>
+                    <a href="{% url 'transporte:ruta_delete' ruta.id %}" class="btn btn-danger"
+                       onclick="return confirmDelete('ruta')">
+                        <i class="fas fa-trash me-1"></i> Eliminar Ruta
+                    </a>
+                    <a href="{% url 'transporte:ruta_list' %}" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-1"></i> Volver a la Lista
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-header bg-light">
+                <h6 class="mb-0">Información de Registro</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>Creado:</strong> {{ ruta.created_at|date:"d/m/Y H:i" }}</p>
+                <p><strong>Actualizado:</strong> {{ ruta.updated_at|date:"d/m/Y H:i" }}</p>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-header bg-light">
+                <h6 class="mb-0">Estadísticas</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>Total Despachos:</strong> {{ ruta.despachos.all.count }}</p>
+                <p><strong>Despachos Activos:</strong> 
+                    {{ ruta.despachos.filter|estado_activo_count }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

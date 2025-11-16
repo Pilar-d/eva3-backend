@@ -1,0 +1,4202 @@
+[
+    {
+        "model": "transporte.cliente",
+        "pk": 1,
+        "fields": {
+            "codigo": "CL001",
+            "nombre": "Empresa Log\u00edstica 1",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 1 - Concepci\u00f3n",
+            "telefono": "+56 9 88001",
+            "email": "contacto1@empresa.cl",
+            "ruc_o_dni": "769400001",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 2,
+        "fields": {
+            "codigo": "CL002",
+            "nombre": "Empresa Log\u00edstica 2",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 2 - Valpara\u00edso",
+            "telefono": "+56 9 88002",
+            "email": "contacto2@empresa.cl",
+            "ruc_o_dni": "769400002",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 3,
+        "fields": {
+            "codigo": "CL003",
+            "nombre": "Empresa Log\u00edstica 3",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 3 - Temuco",
+            "telefono": "+56 9 88003",
+            "email": "contacto3@empresa.cl",
+            "ruc_o_dni": "769400003",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 4,
+        "fields": {
+            "codigo": "CL004",
+            "nombre": "Empresa Log\u00edstica 4",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 4 - Santiago",
+            "telefono": "+56 9 88004",
+            "email": "contacto4@empresa.cl",
+            "ruc_o_dni": "769400004",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 5,
+        "fields": {
+            "codigo": "CL005",
+            "nombre": "Empresa Log\u00edstica 5",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 5 - Antofagasta",
+            "telefono": "+56 9 88005",
+            "email": "contacto5@empresa.cl",
+            "ruc_o_dni": "769400005",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 6,
+        "fields": {
+            "codigo": "CL006",
+            "nombre": "Empresa Log\u00edstica 6",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 6 - Valpara\u00edso",
+            "telefono": "+56 9 88006",
+            "email": "contacto6@empresa.cl",
+            "ruc_o_dni": "769400006",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 7,
+        "fields": {
+            "codigo": "CL007",
+            "nombre": "Empresa Log\u00edstica 7",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 7 - Temuco",
+            "telefono": "+56 9 88007",
+            "email": "contacto7@empresa.cl",
+            "ruc_o_dni": "769400007",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 8,
+        "fields": {
+            "codigo": "CL008",
+            "nombre": "Empresa Log\u00edstica 8",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 8 - Antofagasta",
+            "telefono": "+56 9 88008",
+            "email": "contacto8@empresa.cl",
+            "ruc_o_dni": "769400008",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 9,
+        "fields": {
+            "codigo": "CL009",
+            "nombre": "Empresa Log\u00edstica 9",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 9 - Concepci\u00f3n",
+            "telefono": "+56 9 88009",
+            "email": "contacto9@empresa.cl",
+            "ruc_o_dni": "769400009",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 10,
+        "fields": {
+            "codigo": "CL010",
+            "nombre": "Empresa Log\u00edstica 10",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 10 - Concepci\u00f3n",
+            "telefono": "+56 9 88010",
+            "email": "contacto10@empresa.cl",
+            "ruc_o_dni": "769400010",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 11,
+        "fields": {
+            "codigo": "CL011",
+            "nombre": "Empresa Log\u00edstica 11",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 11 - Concepci\u00f3n",
+            "telefono": "+56 9 88011",
+            "email": "contacto11@empresa.cl",
+            "ruc_o_dni": "769400011",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 12,
+        "fields": {
+            "codigo": "CL012",
+            "nombre": "Empresa Log\u00edstica 12",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 12 - Valpara\u00edso",
+            "telefono": "+56 9 88012",
+            "email": "contacto12@empresa.cl",
+            "ruc_o_dni": "769400012",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 13,
+        "fields": {
+            "codigo": "CL013",
+            "nombre": "Empresa Log\u00edstica 13",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 13 - Santiago",
+            "telefono": "+56 9 88013",
+            "email": "contacto13@empresa.cl",
+            "ruc_o_dni": "769400013",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 14,
+        "fields": {
+            "codigo": "CL014",
+            "nombre": "Empresa Log\u00edstica 14",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 14 - Temuco",
+            "telefono": "+56 9 88014",
+            "email": "contacto14@empresa.cl",
+            "ruc_o_dni": "769400014",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 15,
+        "fields": {
+            "codigo": "CL015",
+            "nombre": "Empresa Log\u00edstica 15",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 15 - Antofagasta",
+            "telefono": "+56 9 88015",
+            "email": "contacto15@empresa.cl",
+            "ruc_o_dni": "769400015",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 16,
+        "fields": {
+            "codigo": "CL016",
+            "nombre": "Empresa Log\u00edstica 16",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 16 - Temuco",
+            "telefono": "+56 9 88016",
+            "email": "contacto16@empresa.cl",
+            "ruc_o_dni": "769400016",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 17,
+        "fields": {
+            "codigo": "CL017",
+            "nombre": "Empresa Log\u00edstica 17",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 17 - Concepci\u00f3n",
+            "telefono": "+56 9 88017",
+            "email": "contacto17@empresa.cl",
+            "ruc_o_dni": "769400017",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 18,
+        "fields": {
+            "codigo": "CL018",
+            "nombre": "Empresa Log\u00edstica 18",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 18 - Antofagasta",
+            "telefono": "+56 9 88018",
+            "email": "contacto18@empresa.cl",
+            "ruc_o_dni": "769400018",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 19,
+        "fields": {
+            "codigo": "CL019",
+            "nombre": "Empresa Log\u00edstica 19",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 19 - Santiago",
+            "telefono": "+56 9 88019",
+            "email": "contacto19@empresa.cl",
+            "ruc_o_dni": "769400019",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 20,
+        "fields": {
+            "codigo": "CL020",
+            "nombre": "Empresa Log\u00edstica 20",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 20 - Valpara\u00edso",
+            "telefono": "+56 9 88020",
+            "email": "contacto20@empresa.cl",
+            "ruc_o_dni": "769400020",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 21,
+        "fields": {
+            "codigo": "CL021",
+            "nombre": "Empresa Log\u00edstica 21",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 21 - Valpara\u00edso",
+            "telefono": "+56 9 88021",
+            "email": "contacto21@empresa.cl",
+            "ruc_o_dni": "769400021",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 22,
+        "fields": {
+            "codigo": "CL022",
+            "nombre": "Empresa Log\u00edstica 22",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 22 - Temuco",
+            "telefono": "+56 9 88022",
+            "email": "contacto22@empresa.cl",
+            "ruc_o_dni": "769400022",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 23,
+        "fields": {
+            "codigo": "CL023",
+            "nombre": "Empresa Log\u00edstica 23",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 23 - Valpara\u00edso",
+            "telefono": "+56 9 88023",
+            "email": "contacto23@empresa.cl",
+            "ruc_o_dni": "769400023",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 24,
+        "fields": {
+            "codigo": "CL024",
+            "nombre": "Empresa Log\u00edstica 24",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 24 - Iquique",
+            "telefono": "+56 9 88024",
+            "email": "contacto24@empresa.cl",
+            "ruc_o_dni": "769400024",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 25,
+        "fields": {
+            "codigo": "CL025",
+            "nombre": "Empresa Log\u00edstica 25",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 25 - Concepci\u00f3n",
+            "telefono": "+56 9 88025",
+            "email": "contacto25@empresa.cl",
+            "ruc_o_dni": "769400025",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 26,
+        "fields": {
+            "codigo": "CL026",
+            "nombre": "Empresa Log\u00edstica 26",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 26 - Antofagasta",
+            "telefono": "+56 9 88026",
+            "email": "contacto26@empresa.cl",
+            "ruc_o_dni": "769400026",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 27,
+        "fields": {
+            "codigo": "CL027",
+            "nombre": "Empresa Log\u00edstica 27",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 27 - Concepci\u00f3n",
+            "telefono": "+56 9 88027",
+            "email": "contacto27@empresa.cl",
+            "ruc_o_dni": "769400027",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 28,
+        "fields": {
+            "codigo": "CL028",
+            "nombre": "Empresa Log\u00edstica 28",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 28 - Antofagasta",
+            "telefono": "+56 9 88028",
+            "email": "contacto28@empresa.cl",
+            "ruc_o_dni": "769400028",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 29,
+        "fields": {
+            "codigo": "CL029",
+            "nombre": "Empresa Log\u00edstica 29",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 29 - Valpara\u00edso",
+            "telefono": "+56 9 88029",
+            "email": "contacto29@empresa.cl",
+            "ruc_o_dni": "769400029",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.cliente",
+        "pk": 30,
+        "fields": {
+            "codigo": "CL030",
+            "nombre": "Empresa Log\u00edstica 30",
+            "tipo_cliente": "JURIDICO",
+            "direccion": "Calle 30 - Iquique",
+            "telefono": "+56 9 88030",
+            "email": "contacto30@empresa.cl",
+            "ruc_o_dni": "769400030",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 1,
+        "fields": {
+            "codigo": "CG001",
+            "descripcion": "Textiles",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "4806",
+            "volumen_m3": "13.996",
+            "valor_declarado": "11391",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 2,
+        "fields": {
+            "codigo": "CG002",
+            "descripcion": "Equipos Industriales",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "3454",
+            "volumen_m3": "4.596",
+            "valor_declarado": "16355",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 3,
+        "fields": {
+            "codigo": "CG003",
+            "descripcion": "Alimentos",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "772",
+            "volumen_m3": "21.952",
+            "valor_declarado": "7156",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 4,
+        "fields": {
+            "codigo": "CG004",
+            "descripcion": "Medicinas",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "1866",
+            "volumen_m3": "1.245",
+            "valor_declarado": "12313",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 5,
+        "fields": {
+            "codigo": "CG005",
+            "descripcion": "Equipos Industriales",
+            "tipo_carga": "REFRIGERADA",
+            "peso_kg": "1421",
+            "volumen_m3": "16.764",
+            "valor_declarado": "1924",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 6,
+        "fields": {
+            "codigo": "CG006",
+            "descripcion": "Textiles",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "3293",
+            "volumen_m3": "6.324",
+            "valor_declarado": "14860",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 7,
+        "fields": {
+            "codigo": "CG007",
+            "descripcion": "Alimentos",
+            "tipo_carga": "REFRIGERADA",
+            "peso_kg": "4237",
+            "volumen_m3": "8.312",
+            "valor_declarado": "2283",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 8,
+        "fields": {
+            "codigo": "CG008",
+            "descripcion": "Medicinas",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "4603",
+            "volumen_m3": "23.16",
+            "valor_declarado": "13107",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 9,
+        "fields": {
+            "codigo": "CG009",
+            "descripcion": "Textiles",
+            "tipo_carga": "PERECEDERA",
+            "peso_kg": "2218",
+            "volumen_m3": "13.034",
+            "valor_declarado": "1006",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 10,
+        "fields": {
+            "codigo": "CG010",
+            "descripcion": "Equipos Industriales",
+            "tipo_carga": "REFRIGERADA",
+            "peso_kg": "3542",
+            "volumen_m3": "27.33",
+            "valor_declarado": "17833",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 11,
+        "fields": {
+            "codigo": "CG011",
+            "descripcion": "Textiles",
+            "tipo_carga": "REFRIGERADA",
+            "peso_kg": "1532",
+            "volumen_m3": "4.604",
+            "valor_declarado": "9490",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 12,
+        "fields": {
+            "codigo": "CG012",
+            "descripcion": "Medicinas",
+            "tipo_carga": "PERECEDERA",
+            "peso_kg": "794",
+            "volumen_m3": "4.757",
+            "valor_declarado": "1495",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 13,
+        "fields": {
+            "codigo": "CG013",
+            "descripcion": "Equipos Industriales",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "2562",
+            "volumen_m3": "2.929",
+            "valor_declarado": "17391",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 14,
+        "fields": {
+            "codigo": "CG014",
+            "descripcion": "Muebles",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "4706",
+            "volumen_m3": "3.952",
+            "valor_declarado": "18664",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 15,
+        "fields": {
+            "codigo": "CG015",
+            "descripcion": "Medicinas",
+            "tipo_carga": "PERECEDERA",
+            "peso_kg": "3482",
+            "volumen_m3": "15.689",
+            "valor_declarado": "13868",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 16,
+        "fields": {
+            "codigo": "CG016",
+            "descripcion": "Electrodom\u00e9sticos",
+            "tipo_carga": "REFRIGERADA",
+            "peso_kg": "3448",
+            "volumen_m3": "11.612",
+            "valor_declarado": "4428",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 17,
+        "fields": {
+            "codigo": "CG017",
+            "descripcion": "Textiles",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "574",
+            "volumen_m3": "1.353",
+            "valor_declarado": "2698",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 18,
+        "fields": {
+            "codigo": "CG018",
+            "descripcion": "Muebles",
+            "tipo_carga": "PERECEDERA",
+            "peso_kg": "284",
+            "volumen_m3": "16.734",
+            "valor_declarado": "3308",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 19,
+        "fields": {
+            "codigo": "CG019",
+            "descripcion": "Equipos Industriales",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "2260",
+            "volumen_m3": "22.968",
+            "valor_declarado": "2565",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 20,
+        "fields": {
+            "codigo": "CG020",
+            "descripcion": "Alimentos",
+            "tipo_carga": "PERECEDERA",
+            "peso_kg": "164",
+            "volumen_m3": "6.207",
+            "valor_declarado": "4475",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 21,
+        "fields": {
+            "codigo": "CG021",
+            "descripcion": "Alimentos",
+            "tipo_carga": "PERECEDERA",
+            "peso_kg": "1625",
+            "volumen_m3": "14.584",
+            "valor_declarado": "12130",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 22,
+        "fields": {
+            "codigo": "CG022",
+            "descripcion": "Equipos Industriales",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "1016",
+            "volumen_m3": "4.586",
+            "valor_declarado": "1847",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 23,
+        "fields": {
+            "codigo": "CG023",
+            "descripcion": "Equipos Industriales",
+            "tipo_carga": "PERECEDERA",
+            "peso_kg": "1456",
+            "volumen_m3": "2.724",
+            "valor_declarado": "9662",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 24,
+        "fields": {
+            "codigo": "CG024",
+            "descripcion": "Medicinas",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "4460",
+            "volumen_m3": "10.29",
+            "valor_declarado": "7992",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 25,
+        "fields": {
+            "codigo": "CG025",
+            "descripcion": "Muebles",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "4467",
+            "volumen_m3": "13.249",
+            "valor_declarado": "2956",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 26,
+        "fields": {
+            "codigo": "CG026",
+            "descripcion": "Textiles",
+            "tipo_carga": "REFRIGERADA",
+            "peso_kg": "1232",
+            "volumen_m3": "27.808",
+            "valor_declarado": "18462",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 27,
+        "fields": {
+            "codigo": "CG027",
+            "descripcion": "Alimentos",
+            "tipo_carga": "GENERAL",
+            "peso_kg": "539",
+            "volumen_m3": "7.504",
+            "valor_declarado": "14309",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 28,
+        "fields": {
+            "codigo": "CG028",
+            "descripcion": "Medicinas",
+            "tipo_carga": "REFRIGERADA",
+            "peso_kg": "4850",
+            "volumen_m3": "2.839",
+            "valor_declarado": "2274",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 29,
+        "fields": {
+            "codigo": "CG029",
+            "descripcion": "Alimentos",
+            "tipo_carga": "REFRIGERADA",
+            "peso_kg": "4426",
+            "volumen_m3": "20.098",
+            "valor_declarado": "15386",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.carga",
+        "pk": 30,
+        "fields": {
+            "codigo": "CG030",
+            "descripcion": "Textiles",
+            "tipo_carga": "PERECEDERA",
+            "peso_kg": "4153",
+            "volumen_m3": "23.073",
+            "valor_declarado": "15896",
+            "instrucciones_especiales": "",
+            "requiere_refrigeracion": false,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 1,
+        "fields": {
+            "placa": "V001CH",
+            "marca": "DAF",
+            "modelo": "FMX",
+            "a\u00f1o": 2021,
+            "color": "Negro",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "20279",
+            "capacidad_volumen_m3": "45.516",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "134576",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 2,
+        "fields": {
+            "placa": "V002CH",
+            "marca": "MAN",
+            "modelo": "FH",
+            "a\u00f1o": 2018,
+            "color": "Rojo",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "25844",
+            "capacidad_volumen_m3": "35.464",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "154958",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 3,
+        "fields": {
+            "placa": "V003CH",
+            "marca": "Iveco",
+            "modelo": "XF",
+            "a\u00f1o": 2023,
+            "color": "Blanco",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "23334",
+            "capacidad_volumen_m3": "76.127",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "113917",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 4,
+        "fields": {
+            "placa": "V004CH",
+            "marca": "DAF",
+            "modelo": "Stralis",
+            "a\u00f1o": 2016,
+            "color": "Negro",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "27000",
+            "capacidad_volumen_m3": "74.724",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "69948",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 5,
+        "fields": {
+            "placa": "V005CH",
+            "marca": "MAN",
+            "modelo": "Stralis",
+            "a\u00f1o": 2021,
+            "color": "Blanco",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "12531",
+            "capacidad_volumen_m3": "71.715",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "11243",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 6,
+        "fields": {
+            "placa": "V006CH",
+            "marca": "Mercedes-Benz",
+            "modelo": "Stralis",
+            "a\u00f1o": 2022,
+            "color": "Azul",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "25834",
+            "capacidad_volumen_m3": "35.392",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "87938",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 7,
+        "fields": {
+            "placa": "V007CH",
+            "marca": "Mercedes-Benz",
+            "modelo": "TGS",
+            "a\u00f1o": 2019,
+            "color": "Gris",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "19829",
+            "capacidad_volumen_m3": "35.881",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "153754",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 8,
+        "fields": {
+            "placa": "V008CH",
+            "marca": "DAF",
+            "modelo": "Stralis",
+            "a\u00f1o": 2020,
+            "color": "Negro",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "28597",
+            "capacidad_volumen_m3": "69.177",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "119356",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 9,
+        "fields": {
+            "placa": "V009CH",
+            "marca": "Iveco",
+            "modelo": "FMX",
+            "a\u00f1o": 2019,
+            "color": "Azul",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "16662",
+            "capacidad_volumen_m3": "49.058",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "285588",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 10,
+        "fields": {
+            "placa": "V010CH",
+            "marca": "Mercedes-Benz",
+            "modelo": "TGS",
+            "a\u00f1o": 2018,
+            "color": "Blanco",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "14617",
+            "capacidad_volumen_m3": "49.692",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "245533",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 11,
+        "fields": {
+            "placa": "V011CH",
+            "marca": "Mercedes-Benz",
+            "modelo": "TGS",
+            "a\u00f1o": 2019,
+            "color": "Rojo",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "11439",
+            "capacidad_volumen_m3": "74.66",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "200633",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 12,
+        "fields": {
+            "placa": "V012CH",
+            "marca": "Scania",
+            "modelo": "FH",
+            "a\u00f1o": 2021,
+            "color": "Blanco",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "21281",
+            "capacidad_volumen_m3": "51.284",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "28718",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 13,
+        "fields": {
+            "placa": "V013CH",
+            "marca": "Iveco",
+            "modelo": "XF",
+            "a\u00f1o": 2018,
+            "color": "Azul",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "16671",
+            "capacidad_volumen_m3": "55.71",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "90282",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 14,
+        "fields": {
+            "placa": "V014CH",
+            "marca": "Volvo",
+            "modelo": "FH",
+            "a\u00f1o": 2017,
+            "color": "Azul",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "26767",
+            "capacidad_volumen_m3": "64.745",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "18116",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 15,
+        "fields": {
+            "placa": "V015CH",
+            "marca": "MAN",
+            "modelo": "Actros",
+            "a\u00f1o": 2019,
+            "color": "Rojo",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "12833",
+            "capacidad_volumen_m3": "33.122",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "272026",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 16,
+        "fields": {
+            "placa": "V016CH",
+            "marca": "Iveco",
+            "modelo": "FMX",
+            "a\u00f1o": 2018,
+            "color": "Negro",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "13295",
+            "capacidad_volumen_m3": "69.076",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "177929",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 17,
+        "fields": {
+            "placa": "V017CH",
+            "marca": "DAF",
+            "modelo": "XF",
+            "a\u00f1o": 2019,
+            "color": "Rojo",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "13146",
+            "capacidad_volumen_m3": "57.721",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "244734",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 18,
+        "fields": {
+            "placa": "V018CH",
+            "marca": "DAF",
+            "modelo": "XF",
+            "a\u00f1o": 2020,
+            "color": "Gris",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "14221",
+            "capacidad_volumen_m3": "73.428",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "274924",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 19,
+        "fields": {
+            "placa": "V019CH",
+            "marca": "Mercedes-Benz",
+            "modelo": "Actros",
+            "a\u00f1o": 2020,
+            "color": "Blanco",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "13265",
+            "capacidad_volumen_m3": "37.102",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "126004",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 20,
+        "fields": {
+            "placa": "V020CH",
+            "marca": "Iveco",
+            "modelo": "TGS",
+            "a\u00f1o": 2017,
+            "color": "Rojo",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "9169",
+            "capacidad_volumen_m3": "72.622",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "33166",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 21,
+        "fields": {
+            "placa": "V021CH",
+            "marca": "MAN",
+            "modelo": "XF",
+            "a\u00f1o": 2020,
+            "color": "Gris",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "14009",
+            "capacidad_volumen_m3": "42.889",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "280357",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 22,
+        "fields": {
+            "placa": "V022CH",
+            "marca": "Volvo",
+            "modelo": "FMX",
+            "a\u00f1o": 2016,
+            "color": "Negro",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "23908",
+            "capacidad_volumen_m3": "56.882",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "100303",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 23,
+        "fields": {
+            "placa": "V023CH",
+            "marca": "DAF",
+            "modelo": "Actros",
+            "a\u00f1o": 2020,
+            "color": "Blanco",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "18935",
+            "capacidad_volumen_m3": "61.258",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "249032",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 24,
+        "fields": {
+            "placa": "V024CH",
+            "marca": "MAN",
+            "modelo": "FMX",
+            "a\u00f1o": 2022,
+            "color": "Gris",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "16225",
+            "capacidad_volumen_m3": "42.311",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "275790",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 25,
+        "fields": {
+            "placa": "V025CH",
+            "marca": "Volvo",
+            "modelo": "XF",
+            "a\u00f1o": 2017,
+            "color": "Azul",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "12853",
+            "capacidad_volumen_m3": "78.739",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "173894",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 26,
+        "fields": {
+            "placa": "V026CH",
+            "marca": "Scania",
+            "modelo": "XF",
+            "a\u00f1o": 2015,
+            "color": "Negro",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "19624",
+            "capacidad_volumen_m3": "62.454",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "176184",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 27,
+        "fields": {
+            "placa": "V027CH",
+            "marca": "Iveco",
+            "modelo": "Actros",
+            "a\u00f1o": 2021,
+            "color": "Negro",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "29457",
+            "capacidad_volumen_m3": "74.763",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "35504",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 28,
+        "fields": {
+            "placa": "V028CH",
+            "marca": "Volvo",
+            "modelo": "FMX",
+            "a\u00f1o": 2015,
+            "color": "Gris",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "29764",
+            "capacidad_volumen_m3": "75.149",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "26623",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 29,
+        "fields": {
+            "placa": "V029CH",
+            "marca": "Mercedes-Benz",
+            "modelo": "FH",
+            "a\u00f1o": 2018,
+            "color": "Blanco",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "13056",
+            "capacidad_volumen_m3": "78.481",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "279770",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.vehiculo",
+        "pk": 30,
+        "fields": {
+            "placa": "V030CH",
+            "marca": "DAF",
+            "modelo": "FMX",
+            "a\u00f1o": 2018,
+            "color": "Rojo",
+            "tipo_vehiculo": "CAMION",
+            "capacidad_kg": "23889",
+            "capacidad_volumen_m3": "57.403",
+            "estado": "DISPONIBLE",
+            "kilometraje_actual": "62086",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 1,
+        "fields": {
+            "matricula": "CC-001",
+            "modelo": "Cessna 208 Caravan",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "61050",
+            "capacidad_volumen_m3": "618.498",
+            "autonomia_horas": "6.18",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "2749",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 2,
+        "fields": {
+            "matricula": "CC-002",
+            "modelo": "Cessna 208 Caravan",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "68518",
+            "capacidad_volumen_m3": "752.407",
+            "autonomia_horas": "8.03",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "1512",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 3,
+        "fields": {
+            "matricula": "CC-003",
+            "modelo": "Cessna 208 Caravan",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "50759",
+            "capacidad_volumen_m3": "507.462",
+            "autonomia_horas": "7.17",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "2559",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 4,
+        "fields": {
+            "matricula": "CC-004",
+            "modelo": "Boeing 767-300F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "41937",
+            "capacidad_volumen_m3": "364.063",
+            "autonomia_horas": "11.27",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "2075",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 5,
+        "fields": {
+            "matricula": "CC-005",
+            "modelo": "Airbus A330-200F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "77969",
+            "capacidad_volumen_m3": "145.921",
+            "autonomia_horas": "11.08",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "887",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 6,
+        "fields": {
+            "matricula": "CC-006",
+            "modelo": "Boeing 747F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "60797",
+            "capacidad_volumen_m3": "601.775",
+            "autonomia_horas": "12.01",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "3316",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 7,
+        "fields": {
+            "matricula": "CC-007",
+            "modelo": "Boeing 747F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "41033",
+            "capacidad_volumen_m3": "652.707",
+            "autonomia_horas": "9.14",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "3930",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 8,
+        "fields": {
+            "matricula": "CC-008",
+            "modelo": "Boeing 767-300F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "85500",
+            "capacidad_volumen_m3": "219.729",
+            "autonomia_horas": "10.73",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "5436",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 9,
+        "fields": {
+            "matricula": "CC-009",
+            "modelo": "Boeing 747F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "42899",
+            "capacidad_volumen_m3": "605.138",
+            "autonomia_horas": "8.08",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "7179",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 10,
+        "fields": {
+            "matricula": "CC-010",
+            "modelo": "Airbus A330-200F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "74683",
+            "capacidad_volumen_m3": "438.614",
+            "autonomia_horas": "13.5",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "4172",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 11,
+        "fields": {
+            "matricula": "CC-011",
+            "modelo": "Boeing 767-300F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "21044",
+            "capacidad_volumen_m3": "366.041",
+            "autonomia_horas": "13.84",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "3535",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 12,
+        "fields": {
+            "matricula": "CC-012",
+            "modelo": "Cessna 208 Caravan",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "66173",
+            "capacidad_volumen_m3": "367.736",
+            "autonomia_horas": "5.51",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "5295",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 13,
+        "fields": {
+            "matricula": "CC-013",
+            "modelo": "Cessna 208 Caravan",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "24459",
+            "capacidad_volumen_m3": "702.769",
+            "autonomia_horas": "9.91",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "5912",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 14,
+        "fields": {
+            "matricula": "CC-014",
+            "modelo": "Cessna 208 Caravan",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "83883",
+            "capacidad_volumen_m3": "657.883",
+            "autonomia_horas": "9.78",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "3547",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 15,
+        "fields": {
+            "matricula": "CC-015",
+            "modelo": "Boeing 747F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "64256",
+            "capacidad_volumen_m3": "786.25",
+            "autonomia_horas": "10.54",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "6269",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 16,
+        "fields": {
+            "matricula": "CC-016",
+            "modelo": "Boeing 747F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "88601",
+            "capacidad_volumen_m3": "716.527",
+            "autonomia_horas": "8.2",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "8850",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 17,
+        "fields": {
+            "matricula": "CC-017",
+            "modelo": "Boeing 747F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "38725",
+            "capacidad_volumen_m3": "630.353",
+            "autonomia_horas": "11.36",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "1773",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 18,
+        "fields": {
+            "matricula": "CC-018",
+            "modelo": "Boeing 767-300F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "82422",
+            "capacidad_volumen_m3": "583.31",
+            "autonomia_horas": "5.11",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "5935",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 19,
+        "fields": {
+            "matricula": "CC-019",
+            "modelo": "Boeing 747F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "44287",
+            "capacidad_volumen_m3": "411.235",
+            "autonomia_horas": "8.41",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "4375",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 20,
+        "fields": {
+            "matricula": "CC-020",
+            "modelo": "Boeing 767-300F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "88931",
+            "capacidad_volumen_m3": "358.616",
+            "autonomia_horas": "11.23",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "8837",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 21,
+        "fields": {
+            "matricula": "CC-021",
+            "modelo": "Cessna 208 Caravan",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "45992",
+            "capacidad_volumen_m3": "421.846",
+            "autonomia_horas": "10.15",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "7351",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 22,
+        "fields": {
+            "matricula": "CC-022",
+            "modelo": "Cessna 208 Caravan",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "36006",
+            "capacidad_volumen_m3": "721.6",
+            "autonomia_horas": "5.81",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "2760",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 23,
+        "fields": {
+            "matricula": "CC-023",
+            "modelo": "Boeing 767-300F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "27074",
+            "capacidad_volumen_m3": "785.791",
+            "autonomia_horas": "9.86",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "3509",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 24,
+        "fields": {
+            "matricula": "CC-024",
+            "modelo": "Airbus A330-200F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "76186",
+            "capacidad_volumen_m3": "642.319",
+            "autonomia_horas": "8.16",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "4446",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 25,
+        "fields": {
+            "matricula": "CC-025",
+            "modelo": "Boeing 767-300F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "40125",
+            "capacidad_volumen_m3": "676.3",
+            "autonomia_horas": "13.99",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "3005",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 26,
+        "fields": {
+            "matricula": "CC-026",
+            "modelo": "Boeing 767-300F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "65110",
+            "capacidad_volumen_m3": "362.479",
+            "autonomia_horas": "4.3",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "5434",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 27,
+        "fields": {
+            "matricula": "CC-027",
+            "modelo": "Boeing 747F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "62409",
+            "capacidad_volumen_m3": "336.227",
+            "autonomia_horas": "9.65",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "6249",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 28,
+        "fields": {
+            "matricula": "CC-028",
+            "modelo": "Boeing 747F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "45692",
+            "capacidad_volumen_m3": "652.37",
+            "autonomia_horas": "4.72",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "2026",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 29,
+        "fields": {
+            "matricula": "CC-029",
+            "modelo": "Cessna 208 Caravan",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "43695",
+            "capacidad_volumen_m3": "748.979",
+            "autonomia_horas": "10.11",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "3168",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.aeronave",
+        "pk": 30,
+        "fields": {
+            "matricula": "CC-030",
+            "modelo": "Boeing 767-300F",
+            "tipo_aeronave": "AVION_CARGA",
+            "capacidad_kg": "51487",
+            "capacidad_volumen_m3": "371.429",
+            "autonomia_horas": "4.24",
+            "estado": "DISPONIBLE",
+            "horas_vuelo_totales": "5487",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 1,
+        "fields": {
+            "codigo": "CD001",
+            "nombre": "Conductor 1",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC001",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77001",
+            "email": "conductor1@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 2,
+        "fields": {
+            "codigo": "CD002",
+            "nombre": "Conductor 2",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC002",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77002",
+            "email": "conductor2@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 3,
+        "fields": {
+            "codigo": "CD003",
+            "nombre": "Conductor 3",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC003",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77003",
+            "email": "conductor3@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 4,
+        "fields": {
+            "codigo": "CD004",
+            "nombre": "Conductor 4",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC004",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77004",
+            "email": "conductor4@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 5,
+        "fields": {
+            "codigo": "CD005",
+            "nombre": "Conductor 5",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC005",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77005",
+            "email": "conductor5@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 6,
+        "fields": {
+            "codigo": "CD006",
+            "nombre": "Conductor 6",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC006",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77006",
+            "email": "conductor6@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 7,
+        "fields": {
+            "codigo": "CD007",
+            "nombre": "Conductor 7",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC007",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77007",
+            "email": "conductor7@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 8,
+        "fields": {
+            "codigo": "CD008",
+            "nombre": "Conductor 8",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC008",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77008",
+            "email": "conductor8@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 9,
+        "fields": {
+            "codigo": "CD009",
+            "nombre": "Conductor 9",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC009",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77009",
+            "email": "conductor9@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 10,
+        "fields": {
+            "codigo": "CD010",
+            "nombre": "Conductor 10",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC010",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77010",
+            "email": "conductor10@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 11,
+        "fields": {
+            "codigo": "CD011",
+            "nombre": "Conductor 11",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC011",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77011",
+            "email": "conductor11@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 12,
+        "fields": {
+            "codigo": "CD012",
+            "nombre": "Conductor 12",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC012",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77012",
+            "email": "conductor12@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 13,
+        "fields": {
+            "codigo": "CD013",
+            "nombre": "Conductor 13",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC013",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77013",
+            "email": "conductor13@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 14,
+        "fields": {
+            "codigo": "CD014",
+            "nombre": "Conductor 14",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC014",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77014",
+            "email": "conductor14@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 15,
+        "fields": {
+            "codigo": "CD015",
+            "nombre": "Conductor 15",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC015",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77015",
+            "email": "conductor15@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 16,
+        "fields": {
+            "codigo": "CD016",
+            "nombre": "Conductor 16",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC016",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77016",
+            "email": "conductor16@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 17,
+        "fields": {
+            "codigo": "CD017",
+            "nombre": "Conductor 17",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC017",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77017",
+            "email": "conductor17@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 18,
+        "fields": {
+            "codigo": "CD018",
+            "nombre": "Conductor 18",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC018",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77018",
+            "email": "conductor18@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 19,
+        "fields": {
+            "codigo": "CD019",
+            "nombre": "Conductor 19",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC019",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77019",
+            "email": "conductor19@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 20,
+        "fields": {
+            "codigo": "CD020",
+            "nombre": "Conductor 20",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC020",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77020",
+            "email": "conductor20@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 21,
+        "fields": {
+            "codigo": "CD021",
+            "nombre": "Conductor 21",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC021",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77021",
+            "email": "conductor21@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 22,
+        "fields": {
+            "codigo": "CD022",
+            "nombre": "Conductor 22",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC022",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77022",
+            "email": "conductor22@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 23,
+        "fields": {
+            "codigo": "CD023",
+            "nombre": "Conductor 23",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC023",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77023",
+            "email": "conductor23@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 24,
+        "fields": {
+            "codigo": "CD024",
+            "nombre": "Conductor 24",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC024",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77024",
+            "email": "conductor24@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 25,
+        "fields": {
+            "codigo": "CD025",
+            "nombre": "Conductor 25",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC025",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77025",
+            "email": "conductor25@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 26,
+        "fields": {
+            "codigo": "CD026",
+            "nombre": "Conductor 26",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC026",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77026",
+            "email": "conductor26@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 27,
+        "fields": {
+            "codigo": "CD027",
+            "nombre": "Conductor 27",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC027",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77027",
+            "email": "conductor27@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 28,
+        "fields": {
+            "codigo": "CD028",
+            "nombre": "Conductor 28",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC028",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77028",
+            "email": "conductor28@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 29,
+        "fields": {
+            "codigo": "CD029",
+            "nombre": "Conductor 29",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC029",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77029",
+            "email": "conductor29@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.conductor",
+        "pk": 30,
+        "fields": {
+            "codigo": "CD030",
+            "nombre": "Conductor 30",
+            "tipo_licencia": "C",
+            "numero_licencia": "LICC030",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "telefono": "+56 9 77030",
+            "email": "conductor30@mail.com",
+            "fecha_nacimiento": "1985-05-10",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 1,
+        "fields": {
+            "codigo": "PT001",
+            "nombre": "Piloto 1",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC001",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "2473",
+            "telefono": "+56 9 66001",
+            "email": "piloto1@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 2,
+        "fields": {
+            "codigo": "PT002",
+            "nombre": "Piloto 2",
+            "tipo_licencia": "ATPL",
+            "numero_licencia": "PLIC002",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "8634",
+            "telefono": "+56 9 66002",
+            "email": "piloto2@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 3,
+        "fields": {
+            "codigo": "PT003",
+            "nombre": "Piloto 3",
+            "tipo_licencia": "CPL",
+            "numero_licencia": "PLIC003",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "1280",
+            "telefono": "+56 9 66003",
+            "email": "piloto3@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 4,
+        "fields": {
+            "codigo": "PT004",
+            "nombre": "Piloto 4",
+            "tipo_licencia": "CPL",
+            "numero_licencia": "PLIC004",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "4429",
+            "telefono": "+56 9 66004",
+            "email": "piloto4@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 5,
+        "fields": {
+            "codigo": "PT005",
+            "nombre": "Piloto 5",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC005",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "2506",
+            "telefono": "+56 9 66005",
+            "email": "piloto5@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 6,
+        "fields": {
+            "codigo": "PT006",
+            "nombre": "Piloto 6",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC006",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "8958",
+            "telefono": "+56 9 66006",
+            "email": "piloto6@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 7,
+        "fields": {
+            "codigo": "PT007",
+            "nombre": "Piloto 7",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC007",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "6783",
+            "telefono": "+56 9 66007",
+            "email": "piloto7@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 8,
+        "fields": {
+            "codigo": "PT008",
+            "nombre": "Piloto 8",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC008",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "1318",
+            "telefono": "+56 9 66008",
+            "email": "piloto8@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 9,
+        "fields": {
+            "codigo": "PT009",
+            "nombre": "Piloto 9",
+            "tipo_licencia": "ATPL",
+            "numero_licencia": "PLIC009",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "7481",
+            "telefono": "+56 9 66009",
+            "email": "piloto9@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 10,
+        "fields": {
+            "codigo": "PT010",
+            "nombre": "Piloto 10",
+            "tipo_licencia": "ATPL",
+            "numero_licencia": "PLIC010",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "8136",
+            "telefono": "+56 9 66010",
+            "email": "piloto10@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 11,
+        "fields": {
+            "codigo": "PT011",
+            "nombre": "Piloto 11",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC011",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "1052",
+            "telefono": "+56 9 66011",
+            "email": "piloto11@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 12,
+        "fields": {
+            "codigo": "PT012",
+            "nombre": "Piloto 12",
+            "tipo_licencia": "CPL",
+            "numero_licencia": "PLIC012",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "3455",
+            "telefono": "+56 9 66012",
+            "email": "piloto12@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 13,
+        "fields": {
+            "codigo": "PT013",
+            "nombre": "Piloto 13",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC013",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "4163",
+            "telefono": "+56 9 66013",
+            "email": "piloto13@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 14,
+        "fields": {
+            "codigo": "PT014",
+            "nombre": "Piloto 14",
+            "tipo_licencia": "CPL",
+            "numero_licencia": "PLIC014",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "8345",
+            "telefono": "+56 9 66014",
+            "email": "piloto14@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 15,
+        "fields": {
+            "codigo": "PT015",
+            "nombre": "Piloto 15",
+            "tipo_licencia": "ATPL",
+            "numero_licencia": "PLIC015",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "8251",
+            "telefono": "+56 9 66015",
+            "email": "piloto15@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 16,
+        "fields": {
+            "codigo": "PT016",
+            "nombre": "Piloto 16",
+            "tipo_licencia": "ATPL",
+            "numero_licencia": "PLIC016",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "1826",
+            "telefono": "+56 9 66016",
+            "email": "piloto16@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 17,
+        "fields": {
+            "codigo": "PT017",
+            "nombre": "Piloto 17",
+            "tipo_licencia": "ATPL",
+            "numero_licencia": "PLIC017",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "1226",
+            "telefono": "+56 9 66017",
+            "email": "piloto17@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 18,
+        "fields": {
+            "codigo": "PT018",
+            "nombre": "Piloto 18",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC018",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "3561",
+            "telefono": "+56 9 66018",
+            "email": "piloto18@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 19,
+        "fields": {
+            "codigo": "PT019",
+            "nombre": "Piloto 19",
+            "tipo_licencia": "ATPL",
+            "numero_licencia": "PLIC019",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "4470",
+            "telefono": "+56 9 66019",
+            "email": "piloto19@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 20,
+        "fields": {
+            "codigo": "PT020",
+            "nombre": "Piloto 20",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC020",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "2844",
+            "telefono": "+56 9 66020",
+            "email": "piloto20@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 21,
+        "fields": {
+            "codigo": "PT021",
+            "nombre": "Piloto 21",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC021",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "4818",
+            "telefono": "+56 9 66021",
+            "email": "piloto21@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 22,
+        "fields": {
+            "codigo": "PT022",
+            "nombre": "Piloto 22",
+            "tipo_licencia": "CPL",
+            "numero_licencia": "PLIC022",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "1301",
+            "telefono": "+56 9 66022",
+            "email": "piloto22@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 23,
+        "fields": {
+            "codigo": "PT023",
+            "nombre": "Piloto 23",
+            "tipo_licencia": "CPL",
+            "numero_licencia": "PLIC023",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "9071",
+            "telefono": "+56 9 66023",
+            "email": "piloto23@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 24,
+        "fields": {
+            "codigo": "PT024",
+            "nombre": "Piloto 24",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC024",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "8110",
+            "telefono": "+56 9 66024",
+            "email": "piloto24@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 25,
+        "fields": {
+            "codigo": "PT025",
+            "nombre": "Piloto 25",
+            "tipo_licencia": "CPL",
+            "numero_licencia": "PLIC025",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "7565",
+            "telefono": "+56 9 66025",
+            "email": "piloto25@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 26,
+        "fields": {
+            "codigo": "PT026",
+            "nombre": "Piloto 26",
+            "tipo_licencia": "ATPL",
+            "numero_licencia": "PLIC026",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "5945",
+            "telefono": "+56 9 66026",
+            "email": "piloto26@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 27,
+        "fields": {
+            "codigo": "PT027",
+            "nombre": "Piloto 27",
+            "tipo_licencia": "CPL",
+            "numero_licencia": "PLIC027",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "2758",
+            "telefono": "+56 9 66027",
+            "email": "piloto27@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 28,
+        "fields": {
+            "codigo": "PT028",
+            "nombre": "Piloto 28",
+            "tipo_licencia": "CPL",
+            "numero_licencia": "PLIC028",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "5414",
+            "telefono": "+56 9 66028",
+            "email": "piloto28@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 29,
+        "fields": {
+            "codigo": "PT029",
+            "nombre": "Piloto 29",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC029",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "1194",
+            "telefono": "+56 9 66029",
+            "email": "piloto29@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.piloto",
+        "pk": 30,
+        "fields": {
+            "codigo": "PT030",
+            "nombre": "Piloto 30",
+            "tipo_licencia": "PPL",
+            "numero_licencia": "PLIC030",
+            "fecha_vencimiento_licencia": "2030-12-31",
+            "fecha_vencimiento_medico": "2028-12-31",
+            "horas_vuelo_totales": "586",
+            "telefono": "+56 9 66030",
+            "email": "piloto30@mail.com",
+            "fecha_nacimiento": "1980-03-20",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 1,
+        "fields": {
+            "codigo": "RT001",
+            "nombre": "Iquique-Antofagasta",
+            "origen": "Iquique",
+            "destino": "Antofagasta",
+            "distancia_km": "1319",
+            "tiempo_estimado_horas": "12.91",
+            "tipo_transporte": "TERRESTRE",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 2,
+        "fields": {
+            "codigo": "RT002",
+            "nombre": "Santiago-Antofagasta",
+            "origen": "Santiago",
+            "destino": "Antofagasta",
+            "distancia_km": "1036",
+            "tiempo_estimado_horas": "18.05",
+            "tipo_transporte": "TERRESTRE",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 3,
+        "fields": {
+            "codigo": "RT003",
+            "nombre": "Antofagasta-Concepci\u00f3n",
+            "origen": "Antofagasta",
+            "destino": "Concepci\u00f3n",
+            "distancia_km": "709",
+            "tiempo_estimado_horas": "14.71",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 4,
+        "fields": {
+            "codigo": "RT004",
+            "nombre": "Temuco-Antofagasta",
+            "origen": "Temuco",
+            "destino": "Antofagasta",
+            "distancia_km": "1643",
+            "tiempo_estimado_horas": "11.22",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 5,
+        "fields": {
+            "codigo": "RT005",
+            "nombre": "Antofagasta-Iquique",
+            "origen": "Antofagasta",
+            "destino": "Iquique",
+            "distancia_km": "1769",
+            "tiempo_estimado_horas": "10.06",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 6,
+        "fields": {
+            "codigo": "RT006",
+            "nombre": "Temuco-Iquique",
+            "origen": "Temuco",
+            "destino": "Iquique",
+            "distancia_km": "855",
+            "tiempo_estimado_horas": "1.15",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 7,
+        "fields": {
+            "codigo": "RT007",
+            "nombre": "Concepci\u00f3n-Antofagasta",
+            "origen": "Concepci\u00f3n",
+            "destino": "Antofagasta",
+            "distancia_km": "565",
+            "tiempo_estimado_horas": "2.21",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 8,
+        "fields": {
+            "codigo": "RT008",
+            "nombre": "Santiago-Iquique",
+            "origen": "Santiago",
+            "destino": "Iquique",
+            "distancia_km": "217",
+            "tiempo_estimado_horas": "11.95",
+            "tipo_transporte": "TERRESTRE",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 9,
+        "fields": {
+            "codigo": "RT009",
+            "nombre": "Temuco-Santiago",
+            "origen": "Temuco",
+            "destino": "Santiago",
+            "distancia_km": "1917",
+            "tiempo_estimado_horas": "1.59",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 10,
+        "fields": {
+            "codigo": "RT010",
+            "nombre": "Temuco-Santiago",
+            "origen": "Temuco",
+            "destino": "Santiago",
+            "distancia_km": "462",
+            "tiempo_estimado_horas": "13.37",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 11,
+        "fields": {
+            "codigo": "RT011",
+            "nombre": "Temuco-Santiago",
+            "origen": "Temuco",
+            "destino": "Santiago",
+            "distancia_km": "959",
+            "tiempo_estimado_horas": "3.6",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 12,
+        "fields": {
+            "codigo": "RT012",
+            "nombre": "Iquique-Concepci\u00f3n",
+            "origen": "Iquique",
+            "destino": "Concepci\u00f3n",
+            "distancia_km": "1192",
+            "tiempo_estimado_horas": "4.97",
+            "tipo_transporte": "TERRESTRE",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 13,
+        "fields": {
+            "codigo": "RT013",
+            "nombre": "Concepci\u00f3n-Antofagasta",
+            "origen": "Concepci\u00f3n",
+            "destino": "Antofagasta",
+            "distancia_km": "1443",
+            "tiempo_estimado_horas": "4.04",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 14,
+        "fields": {
+            "codigo": "RT014",
+            "nombre": "Valpara\u00edso-Antofagasta",
+            "origen": "Valpara\u00edso",
+            "destino": "Antofagasta",
+            "distancia_km": "1386",
+            "tiempo_estimado_horas": "12.65",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 15,
+        "fields": {
+            "codigo": "RT015",
+            "nombre": "Valpara\u00edso-Iquique",
+            "origen": "Valpara\u00edso",
+            "destino": "Iquique",
+            "distancia_km": "1465",
+            "tiempo_estimado_horas": "7.34",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 16,
+        "fields": {
+            "codigo": "RT016",
+            "nombre": "Santiago-Antofagasta",
+            "origen": "Santiago",
+            "destino": "Antofagasta",
+            "distancia_km": "534",
+            "tiempo_estimado_horas": "19.1",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 17,
+        "fields": {
+            "codigo": "RT017",
+            "nombre": "Santiago-Antofagasta",
+            "origen": "Santiago",
+            "destino": "Antofagasta",
+            "distancia_km": "1700",
+            "tiempo_estimado_horas": "1.98",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 18,
+        "fields": {
+            "codigo": "RT018",
+            "nombre": "Valpara\u00edso-Concepci\u00f3n",
+            "origen": "Valpara\u00edso",
+            "destino": "Concepci\u00f3n",
+            "distancia_km": "943",
+            "tiempo_estimado_horas": "7.1",
+            "tipo_transporte": "TERRESTRE",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 19,
+        "fields": {
+            "codigo": "RT019",
+            "nombre": "Iquique-Santiago",
+            "origen": "Iquique",
+            "destino": "Santiago",
+            "distancia_km": "1785",
+            "tiempo_estimado_horas": "3.34",
+            "tipo_transporte": "TERRESTRE",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 20,
+        "fields": {
+            "codigo": "RT020",
+            "nombre": "Temuco-Concepci\u00f3n",
+            "origen": "Temuco",
+            "destino": "Concepci\u00f3n",
+            "distancia_km": "1296",
+            "tiempo_estimado_horas": "4.57",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 21,
+        "fields": {
+            "codigo": "RT021",
+            "nombre": "Temuco-Iquique",
+            "origen": "Temuco",
+            "destino": "Iquique",
+            "distancia_km": "1382",
+            "tiempo_estimado_horas": "19.75",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 22,
+        "fields": {
+            "codigo": "RT022",
+            "nombre": "Santiago-Antofagasta",
+            "origen": "Santiago",
+            "destino": "Antofagasta",
+            "distancia_km": "763",
+            "tiempo_estimado_horas": "5.19",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 23,
+        "fields": {
+            "codigo": "RT023",
+            "nombre": "Antofagasta-Concepci\u00f3n",
+            "origen": "Antofagasta",
+            "destino": "Concepci\u00f3n",
+            "distancia_km": "1187",
+            "tiempo_estimado_horas": "18.33",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 24,
+        "fields": {
+            "codigo": "RT024",
+            "nombre": "Iquique-Santiago",
+            "origen": "Iquique",
+            "destino": "Santiago",
+            "distancia_km": "64",
+            "tiempo_estimado_horas": "3.19",
+            "tipo_transporte": "TERRESTRE",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 25,
+        "fields": {
+            "codigo": "RT025",
+            "nombre": "Antofagasta-Valpara\u00edso",
+            "origen": "Antofagasta",
+            "destino": "Valpara\u00edso",
+            "distancia_km": "805",
+            "tiempo_estimado_horas": "8.78",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 26,
+        "fields": {
+            "codigo": "RT026",
+            "nombre": "Antofagasta-Valpara\u00edso",
+            "origen": "Antofagasta",
+            "destino": "Valpara\u00edso",
+            "distancia_km": "1852",
+            "tiempo_estimado_horas": "14.76",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 27,
+        "fields": {
+            "codigo": "RT027",
+            "nombre": "Concepci\u00f3n-Santiago",
+            "origen": "Concepci\u00f3n",
+            "destino": "Santiago",
+            "distancia_km": "979",
+            "tiempo_estimado_horas": "2.38",
+            "tipo_transporte": "TERRESTRE",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 28,
+        "fields": {
+            "codigo": "RT028",
+            "nombre": "Iquique-Antofagasta",
+            "origen": "Iquique",
+            "destino": "Antofagasta",
+            "distancia_km": "1737",
+            "tiempo_estimado_horas": "10.07",
+            "tipo_transporte": "AEREO",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 29,
+        "fields": {
+            "codigo": "RT029",
+            "nombre": "Santiago-Valpara\u00edso",
+            "origen": "Santiago",
+            "destino": "Valpara\u00edso",
+            "distancia_km": "209",
+            "tiempo_estimado_horas": "12.71",
+            "tipo_transporte": "TERRESTRE",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.ruta",
+        "pk": 30,
+        "fields": {
+            "codigo": "RT030",
+            "nombre": "Temuco-Iquique",
+            "origen": "Temuco",
+            "destino": "Iquique",
+            "distancia_km": "1370",
+            "tiempo_estimado_horas": "18.92",
+            "tipo_transporte": "TERRESTRE",
+            "activo": true,
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 1,
+        "fields": {
+            "referencia": "DP001",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 1,
+            "vehiculo": 1,
+            "aeronave": 1,
+            "conductor": 1,
+            "piloto": 1,
+            "cliente": 1,
+            "carga": 1,
+            "peso_total_kg": "1391",
+            "volumen_m3": "23.647",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 2,
+        "fields": {
+            "referencia": "DP002",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 2,
+            "vehiculo": 2,
+            "aeronave": 2,
+            "conductor": 2,
+            "piloto": 2,
+            "cliente": 2,
+            "carga": 2,
+            "peso_total_kg": "1843",
+            "volumen_m3": "18.583",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 3,
+        "fields": {
+            "referencia": "DP003",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 3,
+            "vehiculo": 3,
+            "aeronave": 3,
+            "conductor": 3,
+            "piloto": 3,
+            "cliente": 3,
+            "carga": 3,
+            "peso_total_kg": "1694",
+            "volumen_m3": "24.291",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 4,
+        "fields": {
+            "referencia": "DP004",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 4,
+            "vehiculo": 4,
+            "aeronave": 4,
+            "conductor": 4,
+            "piloto": 4,
+            "cliente": 4,
+            "carga": 4,
+            "peso_total_kg": "3439",
+            "volumen_m3": "3.24",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 5,
+        "fields": {
+            "referencia": "DP005",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 5,
+            "vehiculo": 5,
+            "aeronave": 5,
+            "conductor": 5,
+            "piloto": 5,
+            "cliente": 5,
+            "carga": 5,
+            "peso_total_kg": "4480",
+            "volumen_m3": "22.142",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 6,
+        "fields": {
+            "referencia": "DP006",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 6,
+            "vehiculo": 6,
+            "aeronave": 6,
+            "conductor": 6,
+            "piloto": 6,
+            "cliente": 6,
+            "carga": 6,
+            "peso_total_kg": "4388",
+            "volumen_m3": "8.175",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 7,
+        "fields": {
+            "referencia": "DP007",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 7,
+            "vehiculo": 7,
+            "aeronave": 7,
+            "conductor": 7,
+            "piloto": 7,
+            "cliente": 7,
+            "carga": 7,
+            "peso_total_kg": "961",
+            "volumen_m3": "19.634",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 8,
+        "fields": {
+            "referencia": "DP008",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 8,
+            "vehiculo": 8,
+            "aeronave": 8,
+            "conductor": 8,
+            "piloto": 8,
+            "cliente": 8,
+            "carga": 8,
+            "peso_total_kg": "3834",
+            "volumen_m3": "9.348",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 9,
+        "fields": {
+            "referencia": "DP009",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 9,
+            "vehiculo": 9,
+            "aeronave": 9,
+            "conductor": 9,
+            "piloto": 9,
+            "cliente": 9,
+            "carga": 9,
+            "peso_total_kg": "2803",
+            "volumen_m3": "22.155",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 10,
+        "fields": {
+            "referencia": "DP010",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 10,
+            "vehiculo": 10,
+            "aeronave": 10,
+            "conductor": 10,
+            "piloto": 10,
+            "cliente": 10,
+            "carga": 10,
+            "peso_total_kg": "1515",
+            "volumen_m3": "29.299",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 11,
+        "fields": {
+            "referencia": "DP011",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 11,
+            "vehiculo": 11,
+            "aeronave": 11,
+            "conductor": 11,
+            "piloto": 11,
+            "cliente": 11,
+            "carga": 11,
+            "peso_total_kg": "1898",
+            "volumen_m3": "15.84",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 12,
+        "fields": {
+            "referencia": "DP012",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 12,
+            "vehiculo": 12,
+            "aeronave": 12,
+            "conductor": 12,
+            "piloto": 12,
+            "cliente": 12,
+            "carga": 12,
+            "peso_total_kg": "2439",
+            "volumen_m3": "11.311",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 13,
+        "fields": {
+            "referencia": "DP013",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 13,
+            "vehiculo": 13,
+            "aeronave": 13,
+            "conductor": 13,
+            "piloto": 13,
+            "cliente": 13,
+            "carga": 13,
+            "peso_total_kg": "2255",
+            "volumen_m3": "28.62",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 14,
+        "fields": {
+            "referencia": "DP014",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 14,
+            "vehiculo": 14,
+            "aeronave": 14,
+            "conductor": 14,
+            "piloto": 14,
+            "cliente": 14,
+            "carga": 14,
+            "peso_total_kg": "1667",
+            "volumen_m3": "28.752",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 15,
+        "fields": {
+            "referencia": "DP015",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 15,
+            "vehiculo": 15,
+            "aeronave": 15,
+            "conductor": 15,
+            "piloto": 15,
+            "cliente": 15,
+            "carga": 15,
+            "peso_total_kg": "3506",
+            "volumen_m3": "12.834",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 16,
+        "fields": {
+            "referencia": "DP016",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 16,
+            "vehiculo": 16,
+            "aeronave": 16,
+            "conductor": 16,
+            "piloto": 16,
+            "cliente": 16,
+            "carga": 16,
+            "peso_total_kg": "3597",
+            "volumen_m3": "3.073",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 17,
+        "fields": {
+            "referencia": "DP017",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 17,
+            "vehiculo": 17,
+            "aeronave": 17,
+            "conductor": 17,
+            "piloto": 17,
+            "cliente": 17,
+            "carga": 17,
+            "peso_total_kg": "3550",
+            "volumen_m3": "3.79",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 18,
+        "fields": {
+            "referencia": "DP018",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 18,
+            "vehiculo": 18,
+            "aeronave": 18,
+            "conductor": 18,
+            "piloto": 18,
+            "cliente": 18,
+            "carga": 18,
+            "peso_total_kg": "3453",
+            "volumen_m3": "14.244",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 19,
+        "fields": {
+            "referencia": "DP019",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 19,
+            "vehiculo": 19,
+            "aeronave": 19,
+            "conductor": 19,
+            "piloto": 19,
+            "cliente": 19,
+            "carga": 19,
+            "peso_total_kg": "3886",
+            "volumen_m3": "24.571",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 20,
+        "fields": {
+            "referencia": "DP020",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 20,
+            "vehiculo": 20,
+            "aeronave": 20,
+            "conductor": 20,
+            "piloto": 20,
+            "cliente": 20,
+            "carga": 20,
+            "peso_total_kg": "4409",
+            "volumen_m3": "29.49",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 21,
+        "fields": {
+            "referencia": "DP021",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 21,
+            "vehiculo": 21,
+            "aeronave": 21,
+            "conductor": 21,
+            "piloto": 21,
+            "cliente": 21,
+            "carga": 21,
+            "peso_total_kg": "482",
+            "volumen_m3": "9.936",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 22,
+        "fields": {
+            "referencia": "DP022",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 22,
+            "vehiculo": 22,
+            "aeronave": 22,
+            "conductor": 22,
+            "piloto": 22,
+            "cliente": 22,
+            "carga": 22,
+            "peso_total_kg": "3752",
+            "volumen_m3": "5.642",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 23,
+        "fields": {
+            "referencia": "DP023",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 23,
+            "vehiculo": 23,
+            "aeronave": 23,
+            "conductor": 23,
+            "piloto": 23,
+            "cliente": 23,
+            "carga": 23,
+            "peso_total_kg": "1837",
+            "volumen_m3": "16.426",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 24,
+        "fields": {
+            "referencia": "DP024",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 24,
+            "vehiculo": 24,
+            "aeronave": 24,
+            "conductor": 24,
+            "piloto": 24,
+            "cliente": 24,
+            "carga": 24,
+            "peso_total_kg": "4333",
+            "volumen_m3": "12.16",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 25,
+        "fields": {
+            "referencia": "DP025",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 25,
+            "vehiculo": 25,
+            "aeronave": 25,
+            "conductor": 25,
+            "piloto": 25,
+            "cliente": 25,
+            "carga": 25,
+            "peso_total_kg": "3515",
+            "volumen_m3": "15.205",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 26,
+        "fields": {
+            "referencia": "DP026",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 26,
+            "vehiculo": 26,
+            "aeronave": 26,
+            "conductor": 26,
+            "piloto": 26,
+            "cliente": 26,
+            "carga": 26,
+            "peso_total_kg": "4796",
+            "volumen_m3": "2.636",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 27,
+        "fields": {
+            "referencia": "DP027",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 27,
+            "vehiculo": 27,
+            "aeronave": 27,
+            "conductor": 27,
+            "piloto": 27,
+            "cliente": 27,
+            "carga": 27,
+            "peso_total_kg": "823",
+            "volumen_m3": "26.046",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 28,
+        "fields": {
+            "referencia": "DP028",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 28,
+            "vehiculo": 28,
+            "aeronave": 28,
+            "conductor": 28,
+            "piloto": 28,
+            "cliente": 28,
+            "carga": 28,
+            "peso_total_kg": "311",
+            "volumen_m3": "22.092",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 29,
+        "fields": {
+            "referencia": "DP029",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 29,
+            "vehiculo": 29,
+            "aeronave": 29,
+            "conductor": 29,
+            "piloto": 29,
+            "cliente": 29,
+            "carga": 29,
+            "peso_total_kg": "2215",
+            "volumen_m3": "13.099",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    },
+    {
+        "model": "transporte.despacho",
+        "pk": 30,
+        "fields": {
+            "referencia": "DP030",
+            "fecha_solicitud": "2025-11-16T01:10:24.018805",
+            "ruta": 30,
+            "vehiculo": 30,
+            "aeronave": 30,
+            "conductor": 30,
+            "piloto": 30,
+            "cliente": 30,
+            "carga": 30,
+            "peso_total_kg": "3195",
+            "volumen_m3": "6.919",
+            "estado": "EN_RUTA",
+            "created_at": "2025-11-16T01:10:24.018805",
+            "updated_at": "2025-11-16T01:10:24.018805"
+        }
+    }
+]

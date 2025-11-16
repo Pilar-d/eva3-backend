@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación - Sistema Logística</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        .endpoint { background: #f4f4f4; padding: 20px; margin: 10px 0; border-left: 4px solid #007cba; }
+        .method { display: inline-block; padding: 5px 10px; background: #007cba; color: white; border-radius: 3px; }
+        .url { font-family: monospace; background: #eee; padding: 2px 5px; }
+    </style>
+</head>
+<body>
+    <h1>📚 Documentación API - Sistema Logística</h1>
+    
+    <h2>🔑 Autenticación</h2>
+    <p>La API utiliza autenticación por token. Incluye el token en el header:</p>
+    <pre>Authorization: Token {tu_token}</pre>
+    
+    <h2>📋 Endpoints Disponibles</h2>
+    
+    <div class="endpoint">
+        <span class="method">GET</span> <span class="url">/api/transporte/clientes/</span>
+        <p>Lista todos los clientes registrados en el sistema.</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method">POST</span> <span class="url">/api/transporte/clientes/</span>
+        <p>Crea un nuevo cliente. Campos requeridos: codigo, nombre, tipo_cliente.</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method">GET</span> <span class="url">/api/transporte/despachos/</span>
+        <p>Lista todos los despachos con su estado actual.</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method">POST</span> <span class="url">/api/transporte/despachos/</span>
+        <p>Crea un nuevo despacho. Campos requeridos: referencia, ruta, cliente, carga.</p>
+    </div>
+    
+    <h2>🎯 Ejemplos de Uso</h2>
+    
+    <h3>Crear un despacho:</h3>
+    <pre>
+POST /api/transporte/despachos/
+{
+    "referencia": "DESP-2024-001",
+    "ruta": 1,
+    "cliente": 1,
+    "carga": 1,
+    "fecha_programada": "2024-01-15T10:00:00Z",
+    "estado": "PENDIENTE"
+}
+    </pre>
+    
+    <h2>📊 Estados de Despacho</h2>
+    <ul>
+        <li>🟡 <strong>PENDIENTE</strong> - Despacho programado</li>
+        <li>🟠 <strong>EN_RUTA</strong> - En proceso de entrega</li>
+        <li>🟢 <strong>ENTREGADO</strong> - Completado exitosamente</li>
+        <li>🔴 <strong>CANCELADO</strong> - Despacho cancelado</li>
+    </ul>
+</body>
+</html>

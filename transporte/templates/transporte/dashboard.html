@@ -1,0 +1,229 @@
+{% extends 'transporte/base.html' %}
+{% load static %}
+
+{% block title %}Dashboard - LogiTrack{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold">
+        <i class="fas fa-tachometer-alt me-2 text-primary"></i>Dashboard
+    </h2>
+    <div class="btn-group">
+        <a href="{% url 'transporte:index' %}" class="btn btn-outline-primary">
+            <i class="fas fa-home me-1"></i>Inicio
+        </a>
+        <a href="/admin/" target="_blank" class="btn btn-outline-secondary">
+            <i class="fas fa-cog me-1"></i>Admin
+        </a>
+    </div>
+</div>
+
+<!-- Estadísticas Principales -->
+<div class="row mb-4">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card stat-card border-start border-primary border-4">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="fw-bold text-primary">{{ total_despachos }}</h4>
+                        <p class="text-muted mb-0">Total Despachos</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-shipping-fast fa-2x text-primary opacity-50"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card stat-card border-start border-success border-4">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="fw-bold text-success">{{ total_clientes }}</h4>
+                        <p class="text-muted mb-0">Clientes Activos</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-users fa-2x text-success opacity-50"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card stat-card border-start border-warning border-4">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="fw-bold text-warning">{{ despachos_pendientes }}</h4>
+                        <p class="text-muted mb-0">Pendientes</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-clock fa-2x text-warning opacity-50"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card stat-card border-start border-info border-4">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="fw-bold text-info">{{ despachos_en_ruta }}</h4>
+                        <p class="text-muted mb-0">En Ruta</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-truck fa-2x text-info opacity-50"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Acceso Rápido -->
+    <div class="col-lg-8 mb-4">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-rocket me-2"></i>Acceso Rápido
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <a href="{% url 'transporte:cliente_list' %}" class="btn btn-outline-primary w-100 h-100 py-3">
+                            <i class="fas fa-users fa-2x mb-2"></i><br>
+                            Clientes
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{% url 'transporte:despacho_list' %}" class="btn btn-outline-success w-100 h-100 py-3">
+                            <i class="fas fa-shipping-fast fa-2x mb-2"></i><br>
+                            Despachos
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{% url 'transporte:carga_list' %}" class="btn btn-outline-warning w-100 h-100 py-3">
+                            <i class="fas fa-box fa-2x mb-2"></i><br>
+                            Cargas
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{% url 'transporte:vehiculo_list' %}" class="btn btn-outline-info w-100 h-100 py-3">
+                            <i class="fas fa-truck fa-2x mb-2"></i><br>
+                            Vehículos
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{% url 'transporte:aeronave_list' %}" class="btn btn-outline-dark w-100 h-100 py-3">
+                            <i class="fas fa-plane fa-2x mb-2"></i><br>
+                            Aeronaves
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{% url 'transporte:ruta_list' %}" class="btn btn-outline-secondary w-100 h-100 py-3">
+                            <i class="fas fa-route fa-2x mb-2"></i><br>
+                            Rutas
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Herramientas del Sistema -->
+    <div class="col-lg-4 mb-4">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-tools me-2"></i>Herramientas
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="/admin/" target="_blank" class="btn btn-outline-dark text-start">
+                        <i class="fas fa-cog me-2"></i>Panel de Administración
+                    </a>
+                    <a href="/swagger/" target="_blank" class="btn btn-outline-info text-start">
+                        <i class="fas fa-book me-2"></i>Documentación API
+                    </a>
+                    <a href="/api/transporte/" target="_blank" class="btn btn-outline-primary text-start">
+                        <i class="fas fa-code me-2"></i>API REST
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Últimos Despachos -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0">
+                    <i class="fas fa-clock me-2"></i>Despachos Recientes
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Referencia</th>
+                                <th>Cliente</th>
+                                <th>Ruta</th>
+                                <th>Estado</th>
+                                <th>Fecha Programada</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for despacho in ultimos_despachos %}
+                            <tr>
+                                <td><strong>{{ despacho.referencia }}</strong></td>
+                                <td>{{ despacho.cliente.nombre }}</td>
+                                <td>{{ despacho.ruta.origen }} → {{ despacho.ruta.destino }}</td>
+                                <td>
+                                    <span class="status-badge 
+                                        {% if despacho.estado == 'PENDIENTE' %}bg-warning text-dark
+                                        {% elif despacho.estado == 'EN_RUTA' %}bg-info text-white
+                                        {% elif despacho.estado == 'ENTREGADO' %}bg-success text-white
+                                        {% else %}bg-danger text-white{% endif %}">
+                                        {{ despacho.get_estado_display }}
+                                    </span>
+                                </td>
+                                <td>{{ despacho.fecha_programada|date:"d/m/Y H:i"|default:"-" }}</td>
+                                <td>
+                                    <a href="{% url 'transporte:despacho_detail' despacho.id %}" class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="6" class="text-center text-muted py-4">
+                                    <i class="fas fa-inbox fa-2x mb-3"></i><br>
+                                    No hay despachos registrados
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="{% url 'transporte:despacho_list' %}" class="btn btn-primary">
+                        <i class="fas fa-list me-1"></i>Ver Todos los Despachos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

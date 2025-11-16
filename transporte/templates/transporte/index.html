@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiTrack - Sistema de Logística</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c5aa0;
+            --secondary: #6c757d;
+            --success: #28a745;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary) 0%, #1e3a8a 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .nav-card {
+            background: white;
+            border: none;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .nav-card:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-5px);
+        }
+        
+        .nav-card:hover .icon {
+            background: white;
+            color: var(--primary);
+        }
+        
+        .icon {
+            width: 80px;
+            height: 80px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: var(--primary);">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-truck-fast me-2"></i>LogiTrack
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/admin/" target="_blank">
+                    <i class="fas fa-cog me-1"></i>Admin
+                </a>
+                <a class="nav-link" href="/swagger/" target="_blank">
+                    <i class="fas fa-book me-1"></i>API Docs
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">
+                        Logística Global Ltda
+                    </h1>
+                    <p class="lead mb-4">
+                        Sistema integral para la gestión de transporte terrestre y aéreo. 
+                        Controla despachos, flota, rutas y clientes en una sola plataforma.
+                    </p>
+                    <a href="{% url 'transporte:dashboard' %}" class="btn btn-light btn-lg">
+                        <i class="fas fa-rocket me-2"></i>Ir al Dashboard
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <i class="fas fa-truck-fast display-1 opacity-75"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Acceso Rápido al Sistema</h2>
+                <p class="text-muted">Gestiona todos los aspectos de tu operación logística</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Gestión Principal -->
+                <div class="col-md-4">
+                    <a href="{% url 'transporte:cliente_list' %}" class="text-decoration-none">
+                        <div class="nav-card">
+                            <div class="icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h5>Clientes</h5>
+                            <p class="text-muted">Gestión de clientes y información de contacto</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="{% url 'transporte:carga_list' %}" class="text-decoration-none">
+                        <div class="nav-card">
+                            <div class="icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <h5>Cargas</h5>
+                            <p class="text-muted">Control de inventario y tipos de carga</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="{% url 'transporte:despacho_list' %}" class="text-decoration-none">
+                        <div class="nav-card">
+                            <div class="icon">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <h5>Despachos</h5>
+                            <p class="text-muted">Seguimiento de envíos y estados</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Flota y Recursos -->
+                <div class="col-md-4">
+                    <a href="{% url 'transporte:vehiculo_list' %}" class="text-decoration-none">
+                        <div class="nav-card">
+                            <div class="icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h5>Vehículos</h5>
+                            <p class="text-muted">Gestión de flota terrestre</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="{% url 'transporte:aeronave_list' %}" class="text-decoration-none">
+                        <div class="nav-card">
+                            <div class="icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <h5>Aeronaves</h5>
+                            <p class="text-muted">Control de flota aérea</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Personal -->
+                <div class="col-md-4">
+                    <a href="{% url 'transporte:conductor_list' %}" class="text-decoration-none">
+                        <div class="nav-card">
+                            <div class="icon">
+                                <i class="fas fa-id-card"></i>
+                            </div>
+                            <h5>Conductores</h5>
+                            <p class="text-muted">Gestión de personal terrestre</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="{% url 'transporte:piloto_list' %}" class="text-decoration-none">
+                        <div class="nav-card">
+                            <div class="icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h5>Pilotos</h5>
+                            <p class="text-muted">Control de personal aéreo</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Operaciones -->
+                <div class="col-md-4">
+                    <a href="{% url 'transporte:ruta_list' %}" class="text-decoration-none">
+                        <div class="nav-card">
+                            <div class="icon">
+                                <i class="fas fa-route"></i>
+                            </div>
+                            <h5>Rutas</h5>
+                            <p class="text-muted">Planificación de rutas terrestres y aéreas</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Herramientas del Sistema -->
+                <div class="col-md-4">
+                    <a href="/admin/" target="_blank" class="text-decoration-none">
+                        <div class="nav-card">
+                            <div class="icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <h5>Admin</h5>
+                            <p class="text-muted">Panel de administración del sistema</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="/swagger/" target="_blank" class="text-decoration-none">
+                        <div class="nav-card">
+                            <div class="icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h5>API Docs</h5>
+                            <p class="text-muted">Documentación de la API</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="/api/transporte/" target="_blank" class="text-decoration-none">
+                        <div class="nav-card">
+                            <div class="icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h5>API</h5>
+                            <p class="text-muted">Acceso directo a la API REST</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="feature-card card p-4">
+                        <i class="fas fa-truck text-primary display-4 mb-3"></i>
+                        <h3>+500</h3>
+                        <p class="text-muted">Despachos Mensuales</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card card p-4">
+                        <i class="fas fa-users text-success display-4 mb-3"></i>
+                        <h3>+200</h3>
+                        <p class="text-muted">Clientes Activos</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card card p-4">
+                        <i class="fas fa-route text-warning display-4 mb-3"></i>
+                        <h3>50+</h3>
+                        <p class="text-muted">Rutas Activas</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card card p-4">
+                        <i class="fas fa-shield-alt text-danger display-4 mb-3"></i>
+                        <h3>99.8%</h3>
+                        <p class="text-muted">Tasa de Entrega</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">
+                <i class="fas fa-truck-fast me-2"></i>
+                Yarelyn Andrades - Sección IEI-172-N4 &copy; 2025
+            </p>
+            <small class="text-muted">Transporte terrestre y aéreo especializado</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

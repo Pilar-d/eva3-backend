@@ -1,0 +1,163 @@
+{% extends 'transporte/base.html' %}
+
+{% block title %}Detalle Aeronave - LogiTrack{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                <h4 class="mb-0">
+                    <i class="fas fa-plane me-2"></i>Detalle de la Aeronave
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2">Información Básica</h5>
+                        <p><strong>Matrícula:</strong> <span class="text-uppercase">{{ aeronave.matricula }}</span></p>
+                        <p><strong>Modelo:</strong> {{ aeronave.modelo }}</p>
+                        <p><strong>Tipo:</strong> 
+                            <span class="badge 
+                                {% if aeronave.tipo_aeronave == 'AVION_CARGA' %}bg-primary
+                                {% elif aeronave.tipo_aeronave == 'HELICOPTERO' %}bg-info
+                                {% else %}bg-secondary{% endif %}">
+                                {{ aeronave.get_tipo_aeronave_display }}
+                            </span>
+                        </p>
+                        <p><strong>Autonomía:</strong> {{ aeronave.autonomia_horas }} horas</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2">Especificaciones Técnicas</h5>
+                        <p><strong>Capacidad de Carga:</strong> {{ aeronave.capacidad_kg }} kg</p>
+                        <p><strong>Capacidad Volumen:</strong> {{ aeronave.capacidad_volumen_m3 }} m³</p>
+                        <p><strong>Horas de Vuelo Totales:</strong> {{ aeronave.horas_vuelo_totales }} hrs</p>
+                        <p><strong>Estado:</strong> 
+                            <span class="badge 
+                                {% if aeronave.estado == 'DISPONIBLE' %}bg-success
+                                {% elif aeronave.estado == 'MANTENIMIENTO' %}bg-warning text-dark
+                                {% elif aeronave.estado == 'VUELO' %}bg-info
+                                {% else %}bg-secondary{% endif %}">
+                                {{ aeronave.get_estado_display }}
+                            </span>
+                        </p>
+                        <p><strong>Activa:</strong> 
+                            <span class="badge {% if aeronave.activo %}bg-success{% else %}bg-danger{% endif %}">
+                                {{ aeronave.activo|yesno:"Sí,No" }}
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2">Historial de Mantenimiento</h5>
+                        <p><strong>Último Mantenimiento:</strong> 
+                            {% if aeronave.ultimo_mantenimiento %}
+                            {{ aeronave.ultimo_mantenimiento|date:"d/m/Y" }}
+                            {% else %}
+                            <span class="text-muted">No registrado</span>
+                            {% endif %}
+                        </p>
+                        <p><strong>Próximo Mantenimiento:</strong> 
+                            {% if aeronave.proximo_mantenimiento %}
+                                {% if aeronave.proximo_mantenimiento_urgente %}
+                                <span class="badge bg-danger">{{ aeronave.proximo_mantenimiento|date:"d/m/Y" }}</span>
+                                {% else %}
+                                <span class="badge bg-warning text-dark">{{ aeronave.proximo_mantenimiento|date:"d/m/Y" }}</span>
+                                {% endif %}
+                            {% else %}
+                            <span class="text-muted">No programado</span>
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h5 class="border-bottom pb-2">Despachos Asignados</h5>
+                    {% if aeronave.despachos.all %}
+                        <div class="list-group">
+                            {% for despacho in aeronave.despachos.all|slice:":5" %}
+                            <a href="{% url 'transporte:despacho_detail' despacho.id %}" class="list-group-item list-group-item-action">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>{{ despacho.referencia }}</strong>
+                                        <small class="text-muted d-block">
+                                            {{ despacho.ruta.origen }} → {{ despacho.ruta.destino }}
+                                        </small>
+                                    </div>
+                                    <span class="badge 
+                                        {% if despacho.estado == 'PENDIENTE' %}bg-warning text-dark
+                                        {% elif despacho.estado == 'EN_RUTA' %}bg-info
+                                        {% elif despacho.estado == 'ENTREGADO' %}bg-success
+                                        {% else %}bg-danger{% endif %}">
+                                        {{ despacho.get_estado_display }}
+                                    </span>
+                                </div>
+                            </a>
+                            {% endfor %}
+                        </div>
+                        {% if aeronave.despachos.all.count > 5 %}
+                        <p class="text-muted mt-2">... y {{ aeronave.despachos.all.count|add:"-5" }} más</p>
+                        {% endif %}
+                    {% else %}
+                        <p class="text-muted">No hay despachos asignados a esta aeronave.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header bg-secondary text-white">
+                <h6 class="mb-0">Acciones</h6>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="{% url 'transporte:aeronave_update' aeronave.id %}" class="btn btn-warning">
+                        <i class="fas fa-edit me-1"></i> Editar Aeronave
+                    </a>
+                    <a href="{% url 'transporte:aeronave_delete' aeronave.id %}" class="btn btn-danger"
+                       onclick="return confirmDelete('aeronave')">
+                        <i class="fas fa-trash me-1"></i> Eliminar Aeronave
+                    </a>
+                    <a href="{% url 'transporte:aeronave_list' %}" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-1"></i> Volver a la Lista
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-header bg-light">
+                <h6 class="mb-0">Información de Registro</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>Creado:</strong> {{ aeronave.created_at|date:"d/m/Y H:i" }}</p>
+                <p><strong>Actualizado:</strong> {{ aeronave.updated_at|date:"d/m/Y H:i" }}</p>
+            </div>
+        </div>
+
+        {% if aeronave.estado == 'MANTENIMIENTO' %}
+        <div class="card mt-3 border-warning">
+            <div class="card-header bg-warning text-dark">
+                <h6 class="mb-0"><i class="fas fa-tools me-1"></i>En Mantenimiento</h6>
+            </div>
+            <div class="card-body">
+                <p class="mb-0">Esta aeronave está actualmente en mantenimiento.</p>
+            </div>
+        </div>
+        {% elif aeronave.estado == 'VUELO' %}
+        <div class="card mt-3 border-info">
+            <div class="card-header bg-info text-white">
+                <h6 class="mb-0"><i class="fas fa-plane-departure me-1"></i>En Vuelo</h6>
+            </div>
+            <div class="card-body">
+                <p class="mb-0">Esta aeronave está actualmente en vuelo.</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

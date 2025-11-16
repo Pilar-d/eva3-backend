@@ -1,0 +1,149 @@
+{% extends 'transporte/base.html' %}
+{% load static %}
+
+{% block title %}Gestión de Pilotos - LogiTrack{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="fas fa-user-tie me-2 text-dark"></i>Gestión de Pilotos</h2>
+    <a href="{% url 'transporte:piloto_create' %}" class="btn btn-primary">
+        <i class="fas fa-plus me-1"></i> Nuevo Piloto
+    </a>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-white">
+        <h5 class="mb-0"><i class="fas fa-list me-2"></i>Lista de Pilotos</h5>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Licencia</th>
+                        <th>Tipo Licencia</th>
+                        <th>Vencimiento Lic.</th>
+                        <th>Vencimiento Médico</th>
+                        <th>Horas de Vuelo</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for piloto in pilotos %}
+                    <tr>
+                        <td><strong>{{ piloto.codigo }}</strong></td>
+                        <td>{{ piloto.nombre }}</td>
+                        <td>{{ piloto.numero_licencia }}</td>
+                        <td>
+                            <span class="badge bg-info">{{ piloto.get_tipo_licencia_display }}</span>
+                        </td>
+                        <td>
+                            {% if piloto.licencia_vencida %}
+                            <span class="badge bg-danger">{{ piloto.fecha_vencimiento_licencia|date:"d/m/Y" }}</span>
+                            {% else %}
+                            <span class="badge bg-success">{{ piloto.fecha_vencimiento_licencia|date:"d/m/Y" }}</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if piloto.certificado_medico_vencido %}
+                            <span class="badge bg-danger">{{ piloto.fecha_vencimiento_medico|date:"d/m/Y" }}</span>
+                            {% else %}
+                            <span class="badge bg-success">{{ piloto.fecha_vencimiento_medico|date:"d/m/Y" }}</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <span class="badge bg-secondary">{{ piloto.horas_vuelo_totales }} hrs</span>
+                        </td>
+                        <td>
+                            <span class="badge {% if piloto.activo %}bg-success{% else %}bg-danger{% endif %}">
+                                {{ piloto.activo|yesno:"Activo,Inactivo" }}
+                            </span>
+                        </td>
+                        <td>
+                            <div class="btn-group btn-group-sm">
+                                <a href="{% url 'transporte:piloto_detail' piloto.id %}" class="btn btn-outline-info" title="Ver">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="{% url 'transporte:piloto_update' piloto.id %}" class="btn btn-outline-warning" title="Editar">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a href="{% url 'transporte:piloto_delete' piloto.id %}" class="btn btn-outline-danger" title="Eliminar"
+                                   onclick="return confirmDelete('piloto')">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="9" class="text-center text-muted py-4">
+                            <i class="fas fa-user-tie fa-2x mb-3"></i><br>
+                            No hay pilotos registrados
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Estadísticas -->
+<div class="row mt-4">
+    <div class="col-md-3">
+        <div class="card text-white bg-dark">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4>{{ total_pilotos }}</h4>
+                        <p>Total Pilotos</p>
+                    </div>
+                    <i class="fas fa-user-tie fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-success">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4>{{ pilotos_activos }}</h4>
+                        <p>Pilotos Activos</p>
+                    </div>
+                    <i class="fas fa-user-check fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-warning">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4>{{ licencias_vencidas }}</h4>
+                        <p>Licencias Vencidas</p>
+                    </div>
+                    <i class="fas fa-exclamation-triangle fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-info">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4>{{ total_horas_vuelo }}</h4>
+                        <p>Horas Totales</p>
+                    </div>
+                    <i class="fas fa-clock fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

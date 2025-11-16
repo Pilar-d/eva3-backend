@@ -1,0 +1,160 @@
+{% extends 'transporte/base.html' %}
+
+{% block title %}Detalle Piloto - LogiTrack{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                <h4 class="mb-0">
+                    <i class="fas fa-user-tie me-2"></i>Detalle del Piloto
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2">Información Personal</h5>
+                        <p><strong>Código:</strong> {{ piloto.codigo }}</p>
+                        <p><strong>Nombre:</strong> {{ piloto.nombre }}</p>
+                        <p><strong>Fecha de Nacimiento:</strong> 
+                            {% if piloto.fecha_nacimiento %}
+                            {{ piloto.fecha_nacimiento|date:"d/m/Y" }}
+                            {% else %}
+                            <span class="text-muted">No especificado</span>
+                            {% endif %}
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2">Información de Contacto</h5>
+                        <p><strong>Teléfono:</strong> {{ piloto.telefono|default:"No especificado" }}</p>
+                        <p><strong>Email:</strong> {{ piloto.email|default:"No especificado" }}</p>
+                        <p><strong>Estado:</strong> 
+                            <span class="badge {% if piloto.activo %}bg-success{% else %}bg-danger{% endif %}">
+                                {{ piloto.activo|yesno:"Activo,Inactivo" }}
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2">Información de Licencia</h5>
+                        <p><strong>Tipo de Licencia:</strong> 
+                            <span class="badge bg-info">{{ piloto.get_tipo_licencia_display }}</span>
+                        </p>
+                        <p><strong>Número de Licencia:</strong> {{ piloto.numero_licencia }}</p>
+                        <p><strong>Vencimiento Licencia:</strong> 
+                            {% if piloto.licencia_vencida %}
+                            <span class="badge bg-danger">{{ piloto.fecha_vencimiento_licencia|date:"d/m/Y" }}</span>
+                            {% else %}
+                            <span class="badge bg-success">{{ piloto.fecha_vencimiento_licencia|date:"d/m/Y" }}</span>
+                            {% endif %}
+                        </p>
+                        <p><strong>Vencimiento Cert. Médico:</strong> 
+                            {% if piloto.certificado_medico_vencido %}
+                            <span class="badge bg-danger">{{ piloto.fecha_vencimiento_medico|date:"d/m/Y" }}</span>
+                            {% else %}
+                            <span class="badge bg-success">{{ piloto.fecha_vencimiento_medico|date:"d/m/Y" }}</span>
+                            {% endif %}
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2">Experiencia</h5>
+                        <p><strong>Horas de Vuelo Totales:</strong> 
+                            <span class="badge bg-secondary">{{ piloto.horas_vuelo_totales }} hrs</span>
+                        </p>
+                    </div>
+                </div>
+
+                {% if piloto.direccion %}
+                <div class="mt-3">
+                    <h5 class="border-bottom pb-2">Dirección</h5>
+                    <p class="mb-0">{{ piloto.direccion }}</p>
+                </div>
+                {% endif %}
+
+                <div class="mt-4">
+                    <h5 class="border-bottom pb-2">Despachos Asignados</h5>
+                    {% if piloto.despachos.all %}
+                        <div class="list-group">
+                            {% for despacho in piloto.despachos.all|slice:":5" %}
+                            <a href="{% url 'transporte:despacho_detail' despacho.id %}" class="list-group-item list-group-item-action">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>{{ despacho.referencia }}</strong>
+                                        <small class="text-muted d-block">
+                                            {{ despacho.ruta.origen }} → {{ despacho.ruta.destino }}
+                                        </small>
+                                    </div>
+                                    <span class="badge 
+                                        {% if despacho.estado == 'PENDIENTE' %}bg-warning text-dark
+                                        {% elif despacho.estado == 'EN_RUTA' %}bg-info
+                                        {% elif despacho.estado == 'ENTREGADO' %}bg-success
+                                        {% else %}bg-danger{% endif %}">
+                                        {{ despacho.get_estado_display }}
+                                    </span>
+                                </div>
+                            </a>
+                            {% endfor %}
+                        </div>
+                        {% if piloto.despachos.all.count > 5 %}
+                        <p class="text-muted mt-2">... y {{ piloto.despachos.all.count|add:"-5" }} más</p>
+                        {% endif %}
+                    {% else %}
+                        <p class="text-muted">No hay despachos asignados a este piloto.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header bg-secondary text-white">
+                <h6 class="mb-0">Acciones</h6>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="{% url 'transporte:piloto_update' piloto.id %}" class="btn btn-warning">
+                        <i class="fas fa-edit me-1"></i> Editar Piloto
+                    </a>
+                    <a href="{% url 'transporte:piloto_delete' piloto.id %}" class="btn btn-danger"
+                       onclick="return confirmDelete('piloto')">
+                        <i class="fas fa-trash me-1"></i> Eliminar Piloto
+                    </a>
+                    <a href="{% url 'transporte:piloto_list' %}" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-1"></i> Volver a la Lista
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-header bg-light">
+                <h6 class="mb-0">Información de Registro</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>Creado:</strong> {{ piloto.created_at|date:"d/m/Y H:i" }}</p>
+                <p><strong>Actualizado:</strong> {{ piloto.updated_at|date:"d/m/Y H:i" }}</p>
+            </div>
+        </div>
+
+        {% if piloto.licencia_vencida or piloto.certificado_medico_vencido %}
+        <div class="card mt-3 border-danger">
+            <div class="card-header bg-danger text-white">
+                <h6 class="mb-0"><i class="fas fa-exclamation-triangle me-1"></i>Certificaciones Vencidas</h6>
+            </div>
+            <div class="card-body">
+                {% if piloto.licencia_vencida %}
+                <p class="mb-1">• Licencia vencida desde {{ piloto.fecha_vencimiento_licencia|date:"d/m/Y" }}</p>
+                {% endif %}
+                {% if piloto.certificado_medico_vencido %}
+                <p class="mb-0">• Cert. médico vencido desde {{ piloto.fecha_vencimiento_medico|date:"d/m/Y" }}</p>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

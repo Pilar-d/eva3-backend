@@ -1,0 +1,121 @@
+{% extends 'transporte/base.html' %}
+
+{% block title %}{% if form.instance.id %}Editar{% else %}Nueva{% endif %} Ruta - LogiTrack{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h4 class="mb-0">
+                    <i class="fas {% if form.instance.id %}fa-edit{% else %}fa-plus{% endif %} me-2"></i>
+                    {% if form.instance.id %}Editar{% else %}Nueva{% endif %} Ruta
+                </h4>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.codigo.id_for_label }}" class="form-label">Código *</label>
+                            {{ form.codigo }}
+                            {% if form.codigo.errors %}
+                                <div class="text-danger">{{ form.codigo.errors }}</div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.tipo_transporte.id_for_label }}" class="form-label">Tipo de Transporte *</label>
+                            {{ form.tipo_transporte }}
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="{{ form.nombre.id_for_label }}" class="form-label">Nombre *</label>
+                        {{ form.nombre }}
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.origen.id_for_label }}" class="form-label">Origen *</label>
+                            {{ form.origen }}
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.destino.id_for_label }}" class="form-label">Destino *</label>
+                            {{ form.destino }}
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.distancia_km.id_for_label }}" class="form-label">Distancia (km)</label>
+                            {{ form.distancia_km }}
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.tiempo_estimado_horas.id_for_label }}" class="form-label">Tiempo Estimado (horas)</label>
+                            {{ form.tiempo_estimado_horas }}
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.costo_combustible_estimado.id_for_label }}" class="form-label">Costo Combustible Estimado</label>
+                            {{ form.costo_combustible_estimado }}
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.peajes_estimados.id_for_label }}" class="form-label">Peajes Estimados</label>
+                            {{ form.peajes_estimados }}
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="{{ form.descripcion.id_for_label }}" class="form-label">Descripción</label>
+                        {{ form.descripcion }}
+                    </div>
+
+                    <div class="mb-3 form-check form-switch">
+                        {{ form.activo }}
+                        <label for="{{ form.activo.id_for_label }}" class="form-check-label">Ruta Activa</label>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <a href="{% url 'transporte:ruta_list' %}" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left me-1"></i> Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-save me-1"></i> 
+                            {% if form.instance.id %}Actualizar{% else %}Crear{% endif %} Ruta
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    input, select, textarea {
+        width: 100%;
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+    
+    input:focus, select:focus, textarea:focus {
+        border-color: #2c5aa0;
+        box-shadow: 0 0 0 0.2rem rgba(44, 90, 160, 0.25);
+        outline: none;
+    }
+    
+    .form-label {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 8px;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'transporte/base.html' %}
+
+{% block title %}Eliminar Vehículo - LogiTrack{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card border-danger">
+            <div class="card-header bg-danger text-white">
+                <h4 class="mb-0">
+                    <i class="fas fa-exclamation-triangle me-2"></i>Confirmar Eliminación
+                </h4>
+            </div>
+            <div class="card-body text-center">
+                <div class="alert alert-warning">
+                    <h5 class="alert-heading">¡Precaución!</h5>
+                    <p class="mb-0">Está a punto de eliminar el siguiente vehículo:</p>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5>{{ object.marca }} {{ object.modelo }}</h5>
+                        <p class="text-muted mb-1">Placa: {{ object.placa }}</p>
+                        <p class="text-muted mb-1">Año: {{ object.año }}</p>
+                        <p class="text-muted mb-1">Tipo: {{ object.get_tipo_vehiculo_display }}</p>
+                        <p class="text-muted mb-1">Capacidad: {{ object.capacidad_kg }} kg</p>
+                        <p class="text-muted mb-0">Estado: {{ object.get_estado_display }}</p>
+                    </div>
+                </div>
+
+                <div class="alert alert-danger">
+                    <h6 class="alert-heading">Esta acción no se puede deshacer</h6>
+                    <p class="mb-0">
+                        {% if object.despachos.all %}
+                        <strong>Advertencia:</strong> Este vehículo tiene {{ object.despachos.all.count }} despacho(s) asociado(s).
+                        {% endif %}
+                    </p>
+                </div>
+
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="{% url 'transporte:vehiculo_list' %}" class="btn btn-secondary">
+                            <i class="fas fa-times me-1"></i> Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fas fa-trash me-1"></i> Confirmar Eliminación
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

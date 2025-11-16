@@ -1,0 +1,108 @@
+{% extends 'transporte/base.html' %}
+
+{% block title %}Detalle Cliente - LogiTrack{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h4 class="mb-0">
+                    <i class="fas fa-user me-2"></i>Detalle del Cliente
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2">Información Básica</h5>
+                        <p><strong>Código:</strong> {{ cliente.codigo }}</p>
+                        <p><strong>Nombre:</strong> {{ cliente.nombre }}</p>
+                        <p><strong>Tipo:</strong> 
+                            <span class="badge {% if cliente.tipo_cliente == 'JURIDICO' %}bg-info{% else %}bg-secondary{% endif %}">
+                                {{ cliente.get_tipo_cliente_display }}
+                            </span>
+                        </p>
+                        <p><strong>RUC/DNI:</strong> {{ cliente.ruc_o_dni|default:"No especificado" }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2">Información de Contacto</h5>
+                        <p><strong>Teléfono:</strong> {{ cliente.telefono|default:"No especificado" }}</p>
+                        <p><strong>Email:</strong> {{ cliente.email|default:"No especificado" }}</p>
+                        <p><strong>Estado:</strong> 
+                            <span class="badge {% if cliente.activo %}bg-success{% else %}bg-danger{% endif %}">
+                                {{ cliente.activo|yesno:"Activo,Inactivo" }}
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                {% if cliente.direccion %}
+                <div class="mt-4">
+                    <h5 class="border-bottom pb-2">Dirección</h5>
+                    <p class="mb-0">{{ cliente.direccion }}</p>
+                </div>
+                {% endif %}
+
+                <div class="mt-4">
+                    <h5 class="border-bottom pb-2">Despachos Relacionados</h5>
+                    {% if cliente.despachos.all %}
+                        <div class="list-group">
+                            {% for despacho in cliente.despachos.all|slice:":5" %}
+                            <a href="{% url 'transporte:despacho_detail' despacho.id %}" class="list-group-item list-group-item-action">
+                                <div class="d-flex justify-content-between">
+                                    <span>{{ despacho.referencia }}</span>
+                                    <span class="badge 
+                                        {% if despacho.estado == 'PENDIENTE' %}bg-warning text-dark
+                                        {% elif despacho.estado == 'EN_RUTA' %}bg-info
+                                        {% elif despacho.estado == 'ENTREGADO' %}bg-success
+                                        {% else %}bg-danger{% endif %}">
+                                        {{ despacho.get_estado_display }}
+                                    </span>
+                                </div>
+                            </a>
+                            {% endfor %}
+                        </div>
+                        {% if cliente.despachos.all.count > 5 %}
+                        <p class="text-muted mt-2">... y {{ cliente.despachos.all.count|add:"-5" }} más</p>
+                        {% endif %}
+                    {% else %}
+                        <p class="text-muted">No hay despachos registrados para este cliente.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header bg-secondary text-white">
+                <h6 class="mb-0">Acciones</h6>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="{% url 'transporte:cliente_update' cliente.id %}" class="btn btn-warning">
+                        <i class="fas fa-edit me-1"></i> Editar Cliente
+                    </a>
+                    <a href="{% url 'transporte:cliente_delete' cliente.id %}" class="btn btn-danger"
+                       onclick="return confirmDelete('cliente')">
+                        <i class="fas fa-trash me-1"></i> Eliminar Cliente
+                    </a>
+                    <a href="{% url 'transporte:cliente_list' %}" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-1"></i> Volver a la Lista
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-header bg-light">
+                <h6 class="mb-0">Información de Registro</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>Creado:</strong> {{ cliente.created_at|date:"d/m/Y H:i" }}</p>
+                <p><strong>Actualizado:</strong> {{ cliente.updated_at|date:"d/m/Y H:i" }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

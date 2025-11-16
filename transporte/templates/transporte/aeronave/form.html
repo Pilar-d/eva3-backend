@@ -1,0 +1,123 @@
+{% extends 'transporte/base.html' %}
+
+{% block title %}{% if form.instance.id %}Editar{% else %}Nueva{% endif %} Aeronave - LogiTrack{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                <h4 class="mb-0">
+                    <i class="fas {% if form.instance.id %}fa-edit{% else %}fa-plus{% endif %} me-2"></i>
+                    {% if form.instance.id %}Editar{% else %}Nueva{% endif %} Aeronave
+                </h4>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.matricula.id_for_label }}" class="form-label">Matrícula *</label>
+                            {{ form.matricula }}
+                            {% if form.matricula.errors %}
+                                <div class="text-danger">{{ form.matricula.errors }}</div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.tipo_aeronave.id_for_label }}" class="form-label">Tipo de Aeronave *</label>
+                            {{ form.tipo_aeronave }}
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.modelo.id_for_label }}" class="form-label">Modelo *</label>
+                            {{ form.modelo }}
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.autonomia_horas.id_for_label }}" class="form-label">Autonomía (horas) *</label>
+                            {{ form.autonomia_horas }}
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.capacidad_kg.id_for_label }}" class="form-label">Capacidad (kg) *</label>
+                            {{ form.capacidad_kg }}
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.capacidad_volumen_m3.id_for_label }}" class="form-label">Capacidad Volumen (m³) *</label>
+                            {{ form.capacidad_volumen_m3 }}
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.estado.id_for_label }}" class="form-label">Estado *</label>
+                            {{ form.estado }}
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.horas_vuelo_totales.id_for_label }}" class="form-label">Horas de Vuelo Totales</label>
+                            {{ form.horas_vuelo_totales }}
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.ultimo_mantenimiento.id_for_label }}" class="form-label">Último Mantenimiento</label>
+                            {{ form.ultimo_mantenimiento }}
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.proximo_mantenimiento.id_for_label }}" class="form-label">Próximo Mantenimiento</label>
+                            {{ form.proximo_mantenimiento }}
+                        </div>
+                    </div>
+
+                    <div class="mb-3 form-check form-switch">
+                        {{ form.activo }}
+                        <label for="{{ form.activo.id_for_label }}" class="form-check-label">Aeronave Activa</label>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <a href="{% url 'transporte:aeronave_list' %}" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left me-1"></i> Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-save me-1"></i> 
+                            {% if form.instance.id %}Actualizar{% else %}Crear{% endif %} Aeronave
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    input, select, textarea {
+        width: 100%;
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+    
+    input:focus, select:focus, textarea:focus {
+        border-color: #2c5aa0;
+        box-shadow: 0 0 0 0.2rem rgba(44, 90, 160, 0.25);
+        outline: none;
+    }
+    
+    .form-label {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 8px;
+    }
+</style>
+{% endblock %}
