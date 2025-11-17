@@ -35,7 +35,7 @@ urlpatterns = [
     path('transporte/', include('transporte.urls')),
 
     # API REST
-    path('api/transporte/', include('transporte.urls')),
+    path('api/token/transporte/', include('transporte.urls')),
 
     # JWT Auth
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
