@@ -1,14 +1,22 @@
 {% extends 'transporte/base.html' %}
 {% load static %}
 
-{% block title %}Gesti��n de Vehículos - LogiTrack{% endblock %}
+{% block title %}Gestión de Vehículos - LogiTrack{% endblock %}
 
 {% block content %}
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h2><i class="fas fa-truck me-2 text-info"></i>Gestión de Vehículos</h2>
-    <a href="{% url 'transporte:vehiculo_create' %}" class="btn btn-primary">
-        <i class="fas fa-plus me-1"></i> Nuevo Vehículo
-    </a>
+
+    <div class="d-flex gap-2">
+        <!-- Buscador -->
+        <input type="text" id="searchInput" class="form-control"
+            placeholder="Buscar por placa, marca o modelo..." style="width: 260px;">
+
+        <!-- Botón Crear -->
+        <a href="{% url 'transporte:vehiculo_create' %}" class="btn btn-primary">
+            <i class="fas fa-plus me-1"></i> Nuevo Vehículo
+        </a>
+    </div>
 </div>
 
 <div class="card">
@@ -17,7 +25,7 @@
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-striped table-hover">
+            <table id="vehiculoTable" class="table table-striped table-hover">
                 <thead class="table-dark">
                     <tr>
                         <th>Placa</th>
@@ -38,9 +46,7 @@
                             <div><strong>{{ vehiculo.marca }}</strong></div>
                             <small class="text-muted">{{ vehiculo.modelo }} - {{ vehiculo.año }}</small>
                         </td>
-                        <td>
-                            <span class="badge bg-secondary">{{ vehiculo.get_tipo_vehiculo_display }}</span>
-                        </td>
+                        <td><span class="badge bg-secondary">{{ vehiculo.get_tipo_vehiculo_display }}</span></td>
                         <td>
                             <small>{{ vehiculo.capacidad_kg }} kg</small><br>
                             <small>{{ vehiculo.capacidad_volumen_m3 }} m³</small>
@@ -68,16 +74,10 @@
                         </td>
                         <td>
                             <div class="btn-group btn-group-sm">
-                                <a href="{% url 'transporte:vehiculo_detail' vehiculo.id %}" class="btn btn-outline-info" title="Ver">
-                                    <i class="fas fa-eye"></i>
-                                </a>
-                                <a href="{% url 'transporte:vehiculo_update' vehiculo.id %}" class="btn btn-outline-warning" title="Editar">
-                                    <i class="fas fa-edit"></i>
-                                </a>
-                                <a href="{% url 'transporte:vehiculo_delete' vehiculo.id %}" class="btn btn-outline-danger" title="Eliminar"
-                                   onclick="return confirmDelete('vehículo')">
-                                    <i class="fas fa-trash"></i>
-                                </a>
+                                <a href="{% url 'transporte:vehiculo_detail' vehiculo.id %}" class="btn btn-outline-info"><i class="fas fa-eye"></i></a>
+                                <a href="{% url 'transporte:vehiculo_update' vehiculo.id %}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
+                                <a href="{% url 'transporte:vehiculo_delete' vehiculo.id %}" class="btn btn-outline-danger"
+                                   onclick="return confirmDelete('vehículo')"><i class="fas fa-trash"></i></a>
                             </div>
                         </td>
                     </tr>
@@ -95,59 +95,38 @@
     </div>
 </div>
 
-<!-- Estadísticas de Flota -->
+<!-- Estadísticas -->
 <div class="row mt-4">
     <div class="col-md-3">
-        <div class="card text-white bg-info">
-            <div class="card-body">
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <h4>{{ total_vehiculos }}</h4>
-                        <p>Total Vehículos</p>
-                    </div>
-                    <i class="fas fa-truck fa-2x"></i>
-                </div>
-            </div>
-        </div>
+        <div class="card text-white bg-info"><div class="card-body text-center">
+            <h4>{{ total_vehiculos }}</h4><p>Total Vehículos</p>
+        </div></div>
     </div>
     <div class="col-md-3">
-        <div class="card text-white bg-success">
-            <div class="card-body">
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <h4>{{ vehiculos_disponibles }}</h4>
-                        <p>Disponibles</p>
-                    </div>
-                    <i class="fas fa-check-circle fa-2x"></i>
-                </div>
-            </div>
-        </div>
+        <div class="card text-white bg-success"><div class="card-body text-center">
+            <h4>{{ vehiculos_disponibles }}</h4><p>Disponibles</p>
+        </div></div>
     </div>
     <div class="col-md-3">
-        <div class="card text-white bg-warning">
-            <div class="card-body">
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <h4>{{ vehiculos_mantenimiento }}</h4>
-                        <p>En Mantenimiento</p>
-                    </div>
-                    <i class="fas fa-tools fa-2x"></i>
-                </div>
-            </div>
-        </div>
+        <div class="card text-white bg-warning"><div class="card-body text-center">
+            <h4>{{ vehiculos_mantenimiento }}</h4><p>En Mantenimiento</p>
+        </div></div>
     </div>
     <div class="col-md-3">
-        <div class="card text-white bg-danger">
-            <div class="card-body">
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <h4>{{ mantenimientos_urgentes }}</h4>
-                        <p>Mant. Urgente</p>
-                    </div>
-                    <i class="fas fa-exclamation-triangle fa-2x"></i>
-                </div>
-            </div>
-        </div>
+        <div class="card text-white bg-danger"><div class="card-body text-center">
+            <h4>{{ mantenimientos_urgentes }}</h4><p>Mant. Urgente</p>
+        </div></div>
     </div>
 </div>
+
+<!-- Buscador JS -->
+<script>
+document.getElementById('searchInput').addEventListener('keyup', function () {
+    let value = this.value.toLowerCase();
+    document.querySelectorAll('#vehiculoTable tbody tr').forEach(row => {
+        row.style.display = row.innerText.toLowerCase().includes(value) ? '' : 'none';
+    });
+});
+</script>
+
 {% endblock %}
