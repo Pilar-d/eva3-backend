@@ -7,6 +7,7 @@ from datetime import timedelta
 from django.db.models import Sum
 from .models import *
 
+
 class IndexView(TemplateView):
     template_name = 'transporte/index.html'
 

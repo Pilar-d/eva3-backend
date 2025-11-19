@@ -1,5 +1,3 @@
-# logistica/urls.py
-
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import RedirectView
@@ -11,7 +9,7 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
-# Configuración Swagger
+# Configuración Swagger (Documentación pública)
 schema_view = get_schema_view(
     openapi.Info(
         title="LogiTrack API",
@@ -28,24 +26,24 @@ urlpatterns = [
     # Admin Django
     path('admin/', admin.site.urls),
 
-    # Redirección raíz hacia la web de transporte (HTML)
+    # Redirección hacia Transporte (Frontend)
     path('', RedirectView.as_view(url='/transporte/', permanent=False)),
 
-    # Vistas de Django (HTML)
+    # Rutas HTML del sistema
     path('transporte/', include('transporte.urls')),
 
-    # API REST
-    path('api/token/transporte/', include('transporte.urls')),
+    # API REST (si hay endpoints en transporte.urls)
+    path('transporte/api/', include('transporte.urls')),
 
-    # JWT Auth
+    # JWT Auth endpoints
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
-    # Documentación API
+    # Documentación de API con Swagger y ReDoc
     path('swagger.<format>', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 
-    # Auth DRF para login/logout navegador
+    # Login/Logout del navegador para DRF
     path('api-auth/', include('rest_framework.urls')),
 ]

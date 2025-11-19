@@ -8,11 +8,8 @@
     <h2><i class="fas fa-truck me-2 text-info"></i>Gestión de Vehículos</h2>
 
     <div class="d-flex gap-2">
-        <!-- Buscador -->
         <input type="text" id="searchInput" class="form-control"
-            placeholder="Buscar por placa, marca o modelo..." style="width: 260px;">
-
-        <!-- Botón Crear -->
+               placeholder="Buscar por placa, marca o modelo..." style="width: 260px;">
         <a href="{% url 'transporte:vehiculo_create' %}" class="btn btn-primary">
             <i class="fas fa-plus me-1"></i> Nuevo Vehículo
         </a>
@@ -34,7 +31,6 @@
                         <th>Capacidad</th>
                         <th>Kilometraje</th>
                         <th>Estado</th>
-                        <th>Próximo Mantenimiento</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -62,17 +58,6 @@
                             </span>
                         </td>
                         <td>
-                            {% if vehiculo.proximo_mantenimiento %}
-                                {% if vehiculo.proximo_mantenimiento_urgente %}
-                                <span class="badge bg-danger">{{ vehiculo.proximo_mantenimiento|date:"d/m/Y" }}</span>
-                                {% else %}
-                                <span class="badge bg-warning text-dark">{{ vehiculo.proximo_mantenimiento|date:"d/m/Y" }}</span>
-                                {% endif %}
-                            {% else %}
-                                <span class="text-muted">-</span>
-                            {% endif %}
-                        </td>
-                        <td>
                             <div class="btn-group btn-group-sm">
                                 <a href="{% url 'transporte:vehiculo_detail' vehiculo.id %}" class="btn btn-outline-info"><i class="fas fa-eye"></i></a>
                                 <a href="{% url 'transporte:vehiculo_update' vehiculo.id %}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
@@ -83,7 +68,7 @@
                     </tr>
                     {% empty %}
                     <tr>
-                        <td colspan="8" class="text-center text-muted py-4">
+                        <td colspan="7" class="text-center text-muted py-4">
                             <i class="fas fa-truck fa-2x mb-3"></i><br>
                             No hay vehículos registrados
                         </td>
@@ -98,28 +83,31 @@
 <!-- Estadísticas -->
 <div class="row mt-4">
     <div class="col-md-3">
-        <div class="card text-white bg-info"><div class="card-body text-center">
-            <h4>{{ total_vehiculos }}</h4><p>Total Vehículos</p>
-        </div></div>
+        <div class="card text-white bg-info">
+            <div class="card-body text-center">
+                <h4>{{ total_vehiculos }}</h4>
+                <p>Total Vehículos</p>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <div class="card text-white bg-success"><div class="card-body text-center">
-            <h4>{{ vehiculos_disponibles }}</h4><p>Disponibles</p>
-        </div></div>
+        <div class="card text-white bg-success">
+            <div class="card-body text-center">
+                <h4>{{ vehiculos_disponibles }}</h4>
+                <p>Disponibles</p>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <div class="card text-white bg-warning"><div class="card-body text-center">
-            <h4>{{ vehiculos_mantenimiento }}</h4><p>En Mantenimiento</p>
-        </div></div>
-    </div>
-    <div class="col-md-3">
-        <div class="card text-white bg-danger"><div class="card-body text-center">
-            <h4>{{ mantenimientos_urgentes }}</h4><p>Mant. Urgente</p>
-        </div></div>
+        <div class="card text-white bg-warning">
+            <div class="card-body text-center">
+                <h4>{{ vehiculos_mantenimiento }}</h4>
+                <p>En Mantenimiento</p>
+            </div>
+        </div>
     </div>
 </div>
 
-<!-- Buscador JS -->
 <script>
 document.getElementById('searchInput').addEventListener('keyup', function () {
     let value = this.value.toLowerCase();

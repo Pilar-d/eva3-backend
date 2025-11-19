@@ -15,7 +15,8 @@
             <div class="card-body">
                 <form method="post">
                     {% csrf_token %}
-                    
+
+                    <!-- Placa y Tipo de Vehículo -->
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="{{ form.placa.id_for_label }}" class="form-label">Placa *</label>
@@ -24,76 +25,65 @@
                                 <div class="text-danger">{{ form.placa.errors }}</div>
                             {% endif %}
                         </div>
-                        
                         <div class="col-md-6 mb-3">
                             <label for="{{ form.tipo_vehiculo.id_for_label }}" class="form-label">Tipo de Vehículo *</label>
                             {{ form.tipo_vehiculo }}
                         </div>
                     </div>
 
+                    <!-- Marca, Modelo y Año -->
                     <div class="row">
                         <div class="col-md-4 mb-3">
                             <label for="{{ form.marca.id_for_label }}" class="form-label">Marca *</label>
                             {{ form.marca }}
                         </div>
-                        
                         <div class="col-md-4 mb-3">
                             <label for="{{ form.modelo.id_for_label }}" class="form-label">Modelo *</label>
                             {{ form.modelo }}
                         </div>
-                        
                         <div class="col-md-4 mb-3">
                             <label for="{{ form.año.id_for_label }}" class="form-label">Año *</label>
                             {{ form.año }}
                         </div>
                     </div>
 
+                    <!-- Capacidad -->
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="{{ form.capacidad_kg.id_for_label }}" class="form-label">Capacidad (kg) *</label>
                             {{ form.capacidad_kg }}
                         </div>
-                        
                         <div class="col-md-6 mb-3">
                             <label for="{{ form.capacidad_volumen_m3.id_for_label }}" class="form-label">Capacidad Volumen (m³) *</label>
                             {{ form.capacidad_volumen_m3 }}
                         </div>
                     </div>
 
+                    <!-- Estado y Kilometraje -->
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="{{ form.estado.id_for_label }}" class="form-label">Estado *</label>
                             {{ form.estado }}
                         </div>
-                        
                         <div class="col-md-6 mb-3">
                             <label for="{{ form.kilometraje_actual.id_for_label }}" class="form-label">Kilometraje Actual</label>
                             {{ form.kilometraje_actual }}
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="{{ form.ultimo_mantenimiento.id_for_label }}" class="form-label">Último Mantenimiento</label>
-                            {{ form.ultimo_mantenimiento }}
-                        </div>
-                        
-                        <div class="col-md-6 mb-3">
-                            <label for="{{ form.proximo_mantenimiento.id_for_label }}" class="form-label">Próximo Mantenimiento</label>
-                            {{ form.proximo_mantenimiento }}
-                        </div>
-                    </div>
-
+                    <!-- Color -->
                     <div class="mb-3">
                         <label for="{{ form.color.id_for_label }}" class="form-label">Color</label>
                         {{ form.color }}
                     </div>
 
+                    <!-- Vehículo Activo -->
                     <div class="mb-3 form-check form-switch">
                         {{ form.activo }}
                         <label for="{{ form.activo.id_for_label }}" class="form-check-label">Vehículo Activo</label>
                     </div>
 
+                    <!-- Botones -->
                     <div class="d-flex justify-content-between">
                         <a href="{% url 'transporte:vehiculo_list' %}" class="btn btn-secondary">
                             <i class="fas fa-arrow-left me-1"></i> Cancelar

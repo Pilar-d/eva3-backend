@@ -30,7 +30,6 @@
                         <th>Autonomía</th>
                         <th>Horas de Vuelo</th>
                         <th>Estado</th>
-                        <th>Próximo Mantenimiento</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -64,17 +63,6 @@
                                 {% else %}bg-secondary{% endif %}">
                                 {{ aeronave.get_estado_display }}
                             </span>
-                        </td>
-                        <td>
-                            {% if aeronave.proximo_mantenimiento %}
-                                {% if aeronave.proximo_mantenimiento_urgente %}
-                                <span class="badge bg-danger">{{ aeronave.proximo_mantenimiento|date:"d/m/Y" }}</span>
-                                {% else %}
-                                <span class="badge bg-warning text-dark">{{ aeronave.proximo_mantenimiento|date:"d/m/Y" }}</span>
-                                {% endif %}
-                            {% else %}
-                                <span class="text-muted">-</span>
-                            {% endif %}
                         </td>
                         <td>
                             <div class="btn-group btn-group-sm">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}LogiTrack - Sistema de Logística{% endblock %}</title>
+    <title>{% block title %}Sistema de Logística{% endblock %}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -99,7 +99,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background: var(--primary);">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'transporte:index' %}">
-                <i class="fas fa-truck-fast me-2"></i>LogiTrack
+                <i class="fas fa-truck-fast me-2"></i>Logística
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -119,8 +119,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/api/transporte/" target="_blank">
-                            <i class="fas fa-code me-1"></i>API
+                        <a class="nav-link" href="/api/token/" target="_blank">
+                            <i class="fas fa-code me-1"></i>API Token
                         </a>
                     </li>
                 </ul>
@@ -146,7 +146,7 @@
                         
                         <hr class="my-2 opacity-25">
                         
-                        <small class="text-uppercase text-muted mb-2 ps-2">Gestión Principal</small>
+                        <small class="text-uppercase text-muted mb-2 ps-2" class="text-1"><b>Gestión Principal</b></small>
                         <a class="nav-link {% if 'cliente' in request.resolver_match.url_name %}active{% endif %}" 
                            href="{% url 'transporte:cliente_list' %}">
                             <i class="fas fa-users me-2"></i>Clientes
@@ -162,7 +162,7 @@
                         
                         <hr class="my-2 opacity-25">
                         
-                        <small class="text-uppercase text-muted mb-2 ps-2">Flota y Recursos</small>
+                        <small class="text-uppercase text-muted mb-2 ps-2" class="text-1"><b>Flota y Recursos</b></small>
                         <a class="nav-link {% if 'vehiculo' in request.resolver_match.url_name %}active{% endif %}" 
                            href="{% url 'transporte:vehiculo_list' %}">
                             <i class="fas fa-truck me-2"></i>Vehículos
@@ -174,7 +174,7 @@
                         
                         <hr class="my-2 opacity-25">
                         
-                        <small class="text-uppercase text-muted mb-2 ps-2">Personal</small>
+                        <small class="text-uppercase text-muted mb-2 ps-2" ><b>Personal</b></small>
                         <a class="nav-link {% if 'conductor' in request.resolver_match.url_name %}active{% endif %}" 
                            href="{% url 'transporte:conductor_list' %}">
                             <i class="fas fa-id-card me-2"></i>Conductores
@@ -186,7 +186,7 @@
                         
                         <hr class="my-2 opacity-25">
                         
-                        <small class="text-uppercase text-muted mb-2 ps-2">Operaciones</small>
+                        <small class="text-uppercase text-muted mb-2 ps-2"><b>Operaciones</b></small>
                         <a class="nav-link {% if 'ruta' in request.resolver_match.url_name %}active{% endif %}" 
                            href="{% url 'transporte:ruta_list' %}">
                             <i class="fas fa-route me-2"></i>Rutas
@@ -221,7 +221,7 @@
         <div class="container">
             <p class="mb-0">
                 <i class="fas fa-truck-fast me-2"></i>
-                LogiTrack - Sistema de Gestión Logística &copy; 2024
+                Yarelyn Andrades - Sección IEI-172-N4 &copy; 2025
             </p>
         </div>
     </footer>

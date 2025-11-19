@@ -1,5 +1,20 @@
 from django.urls import path
 from . import views
+from rest_framework.routers import DefaultRouter
+from .api import (
+    ClienteViewSet, CargaViewSet, VehiculoViewSet, AeronaveViewSet,
+    ConductorViewSet, PilotoViewSet, RutaViewSet, DespachoViewSet
+)
+router = DefaultRouter()
+router.register(r'clientes', ClienteViewSet)
+router.register(r'cargas', CargaViewSet)
+router.register(r'vehiculos', VehiculoViewSet)
+router.register(r'aeronaves', AeronaveViewSet)
+router.register(r'conductores', ConductorViewSet)
+router.register(r'pilotos', PilotoViewSet)
+router.register(r'rutas', RutaViewSet)
+router.register(r'despachos', DespachoViewSet)
+
 
 app_name = 'transporte'
 
